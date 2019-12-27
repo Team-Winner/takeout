@@ -1,16 +1,20 @@
 # takeout
 Takeout Journal - Code201d55
 
-Day 1 - Fri, 12/20 // In the beginning... there was a project
+## Day 1 - Fri, 12/20 // In the beginning... there was a project
 
 ## Wireframes
+### Home Wireframe
 ![Home Wireframe](https://github.com/Team-Winner/takeout/blob/master/image/Home%20pic.png)  
 
-About  https://github.com/Team-Winner/takeout/blob/master/Wireframe%20-%20about.docx
+### Results Wireframe
+![Results Wireframe](https://github.com/Team-Winner/takeout/blob/master/image/Results.png)
 
-Results https://github.com/Team-Winner/takeout/blob/master/Wireframe%20-%20results.docx
+### About Wireframe
+![About Wireframe](https://github.com/Team-Winner/takeout/blob/master/image/About.png)
 
-Day 2 - Fri, 12/27 //
+
+## Day 2 - Fri, 12/27 //
 
 ## User Stories
 

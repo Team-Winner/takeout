@@ -11,7 +11,7 @@ Takeout Journal - Code201d55
 ![Results Wireframe](https://github.com/Team-Winner/takeout/blob/master/image/Results.png)
 
 ### About Wireframe
-![About Wireframe](https://github.com/Team-Winner/takeout/blob/master/image/About.png)
+![About Wireframe](https://github.com/Team-Winner/takeout/blob/master/image/About%20pic.png)
 
 
 ## Day 2 - Fri, 12/27 //

@@ -44,4 +44,5 @@ Takeout Journal - Code201d55
   c.	Time Estimates – 40 hrs or end of project
 
 
-
+### Domain Modeling
+![DOM](https://github.com/Team-Winner/takeout/blob/master/image/dom.png)

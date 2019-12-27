@@ -5,13 +5,13 @@ Takeout Journal - Code201d55
 
 ## Wireframes
 ### Home Wireframe
-![Home Wireframe](https://github.com/Team-Winner/takeout/blob/master/image/Home%20pic.png)  
+![Home Wireframe](https://github.com/Team-Winner/takeout/blob/master/image/Home-wire.png)  
 
 ### Results Wireframe
-![Results Wireframe](https://github.com/Team-Winner/takeout/blob/master/image/Results.png)
+![Results Wireframe](https://github.com/Team-Winner/takeout/blob/master/image/Results-wire.png)
 
 ### About Wireframe
-![About Wireframe](https://github.com/Team-Winner/takeout/blob/master/image/About%20pic.png)
+![About Wireframe](https://github.com/Team-Winner/takeout/blob/master/image/About-wire.png)
 
 
 ## Day 2 - Fri, 12/27 //

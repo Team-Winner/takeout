@@ -13,19 +13,34 @@
   </header>
   <main>
     <div>
-      <fieldset>
-        <legend>Takeout Details</legend>
-        <label>Restaurant Name:</br>
-            <input type="text" name="name" />
-        </label>
-        <label></label>Walk Time:
-            <input type="number"
-          </li>
-          <li></li>
-          <li></li>
-          <li></li>
-        </ul>
-      </fieldset>
+      <form>
+        <fieldset>
+          <legend>Takeout Details</legend>
+          <label>Restaurant Name:</br>
+              <input type="text" name="name" />
+          </label></br>
+          <label>Walk Time:</br>
+              <input type="text" name="walk-time">
+          </label></br>
+          <label>Wait Time:</br>
+            <input type="text" name="wait-time">
+          </label></br>
+          Price:</br>
+            <select name="price">
+              <option value="low">Less than $10</option>
+              <option value="med">$10 - $15</option>
+              <option value="hi">More than $15</option>
+            </select></br>
+          Rating:</br>
+            <select name="rating">
+              <option value="1star">One Star</option>
+              <option value="2star">Two Star</option>
+              <option value="3star">Three Star</option>
+              <option value="4star">Four Star</option>
+            </select></br>
+          <input type="submit" value="Submit Review" />
+        </fieldset>
+      </form>
     </div>
   </main>
   <footer>

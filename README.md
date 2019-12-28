@@ -46,3 +46,12 @@ Takeout Journal - Code201d55
 
 ### Domain Modeling
 ![DOM](https://github.com/Team-Winner/takeout/blob/master/image/dom.png)
+
+## Additional notes for Friday, 27/12/19
+
+Leads assigned:
+  Eyob Tamir - CSS design
+  Matthew Johnson - Index.html and initial JS coding
+  Patrick Lathrop - About.html and github reviewer
+
+ Team members will review their areas of resposibilities over the weekend and notify the team via slack if there are any new ACP merges to be reviewed.   

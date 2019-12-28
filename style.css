@@ -4,6 +4,8 @@ body{
 }
 header{
   text-align: center;
+  background-color: #333;
+  
 }
 #take-out{
   display: inline-block;
@@ -11,8 +13,8 @@ header{
   font-size: 26px;
   margin-left: 20px;
   margin-top: 20px;
-  float: left;
-  
+  color: white; 
+  position: sticky;
 }
 #nav-list{
   display: inline;
@@ -21,6 +23,9 @@ header{
   display: inline-block;
   font-size: 20px;
   padding: 10px;
+}
+li a:hover {
+  background-color: #111;
 }
 #div-form{
   border-radius: 8px;
@@ -32,11 +37,16 @@ header{
   margin-right: 400px;
   opacity: 0.7;
 }
+.class-takeout{
+  padding: 3px;
+  margin-top: 5px;
+}
 input[type=submit]:hover {
   background-color: #45a049;
 }
 footer{
   margin-top: 200px;
-  margin-bottom: 10px;
   text-align: center;
+  background-color: #333;
+  color:white;
 }

@@ -2,29 +2,56 @@ body{
     background: url(./image/back\ picture.jpg) repeat;
     border: 2px solid black;
 }
-
-#logo img{
-  display: block;
-  text-align: center;
+header{
+  
+}
+p{
+  margin-top: 5px;
+  position: fixed;
+  top: 3px;
+  right:400px;
+  left: 400px;
+  background-color: #333;
+  opacity: 0.7;
+  border-radius: 10px;
+}
+a :hover{
+  background-color: #45a049;
+}
+#nav-list .link-list{
+  float: left; 
+}
+.link-list li{
+  padding-top: 15px;
+  background-color: #f2f2f2; 
+  margin-left: 8px;
+  margin-top: 50px;
+  opacity: 0.5;
+  border-radius: 7px;
+  
+  
+}
+.nav-bar{
+  border-radius: 5px; 
+  margin-top: 225px;
+  font-size: 25pt;
+  margin-left: 3px;
 }
 
-#nav-list ul{
-  display: block;
-text-align: center;
-}
-li a:hover {
-  background-color: #111;
-}
-#social-list ul{
+#nav-list .social-list{
   float: right;
+  margin-right: 3px;
+  margin-top: 50px;
   background-color: #f2f2f2;
   opacity: 0.7;
+  border-radius: 7px;
 }
 .social{
-  height: 30px;
-  width: 30px;
+  height: 35px;
+  width: 35px;
   padding: 5px;
 }
+
 #div-form{
   border-radius: 8px;
   background-color: #f2f2f2;
@@ -43,7 +70,7 @@ input[type=submit]:hover {
   background-color: #45a049;
 }
 footer{
-  margin-top: 200px;
+  margin-top: 300px;
   text-align: center;
   background-color: #333;
   color:white;

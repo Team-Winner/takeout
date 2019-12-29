@@ -5,13 +5,13 @@ Takeout Journal - Code201d55
 
 ## Wireframes
 ### Home Wireframe
-![Home Wireframe](https://github.com/Team-Winner/takeout/blob/master/image/Home-wire.png)  
+![Home Wireframe](https://github.com/Team-Winner/takeout/blob/master/image/wire-home.png)  
 
 ### Results Wireframe
-![Results Wireframe](https://github.com/Team-Winner/takeout/blob/master/image/Results-wire.png)
+![Results Wireframe](https://github.com/Team-Winner/takeout/blob/master/image/wire-results.png)
 
 ### About Wireframe
-![About Wireframe](https://github.com/Team-Winner/takeout/blob/master/image/About-wire.png)
+![About Wireframe](https://github.com/Team-Winner/takeout/blob/master/image/wire-about.png)
 
 
 ## Day 2 - Fri, 12/27 //
@@ -46,3 +46,12 @@ Takeout Journal - Code201d55
 
 ### Domain Modeling
 ![DOM](https://github.com/Team-Winner/takeout/blob/master/image/dom.png)
+
+## Additional notes for Friday, 27/12/19
+
+Leads assigned:
+  Eyob Tamir - CSS design
+  Matthew Johnson - Index.html and initial JS coding
+  Patrick Lathrop - About.html and github reviewer
+
+ Team members will review their areas of resposibilities over the weekend and notify the team via slack if there are any new ACP merges to be reviewed.   

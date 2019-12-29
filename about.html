@@ -1,48 +1,131 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <!-- Used as a referrence https://gabrielx52.github.io/tennis_anyone/about.html -->
+
   <meta charset="UTF-8">
   <link rel="stylesheet" href="css/reset.css">
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/about.css"> 
+  <!-- <link rel="stylesheet" href="css/style.css"> -->
+  <link rel="stylesheet" href="style.css">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>About Us</title>
+
+<style>
+/* body is included for testing and needs to be copied over to style.css// */
+.body{
+    background-image: url(./image/back\ picture.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: 2px solid black;
+}
+
+.aboutUs {
+  margin-left: 250px;
+  margin-top: 50px;
+  border-collapse: separate;
+  border-spacing: 0 1em;
+  color: antiquewhite;
+  width: 65%;
+}
+
+.about-paragraph{
+font-family: Georgia, 'Times New Roman', Times, serif;
+font-size:large;
+}
+
+.paraCell{
+width: auto ;  
+background-color: black;
+opacity: 0.7;
+border-radius: 15px;
+padding-left: 20px;
+padding-right: 10px;
+}
+
+.teamMember {
+  width: fit-content ;  
+  background-color: black;
+  opacity: 0.7;
+  border-radius: 15px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.photo {
+  height: 150px;
+  border-radius: 25px;
+}
+
+.icon{
+  width: 1.5em;
+  margin-left: 0.2em;
+  margin-bottom: 0.4em;
+  cursor: pointer;
+}
+
+</style>
+
 </head>
+
 <body>
   <header>
-    <section id="aboutContent">
-      <div class="about-div marginTop">
-        <img class="photo" src="image/zeyob.jpg" alt="photo1"> <h2>Eyob Tamir</h2>
-        <a href="https/github.com/Eyob1984">;
-          <img class="icon" src="image/github.png" alt="github">
-        </a>
-        <p class="about-paragraph" id="paragraphOne">
-          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas a nostrum eum aut eligendi officia nisi dolorem consequuntur atque. Laudantium, ea! Quae pariatur eligendi dolore. Ducimus quos illo tenetur doloribus ipsum minus ullam corrupti aut, in illum cupiditate, aliquid dignissimos sit iste accusantium maiores exercitationem possimus similique culpa sint necessitatibus"
-        </p>
-      </div>
-      <div class="aboutMiddle"></div>
-      <img class="photo" src="image/zeyob.jpg" alt="photo1"> <h2>Eyob Tamir</h2>
-      <a href="https/github.com/Eyob1984">;
-        <img class="icon" src="image/github.png" alt="github">
-      </a>
-      <p class="aboutParagraph" id="paragraphOne">
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas a nostrum eum aut eligendi officia nisi dolorem consequuntur atque. Laudantium, ea! Quae pariatur eligendi dolore. Ducimus quos illo tenetur doloribus ipsum minus ullam corrupti aut, in illum cupiditate, aliquid dignissimos sit iste accusantium maiores exercitationem possimus similique culpa sint necessitatibus"
-      </p>
-    </div>
-      <div class="aboutBottom"></div>
-      <img class="photo" src="image/zeyob.jpg" alt="photo1"> <h2>Eyob Tamir</h2>
-      <a href="https/github.com/Eyob1984">;
-        <img class="icon" src="image/github.png" alt="github">
-      </a>
-      <p class="aboutParagraph" id="paragraphOne">
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas a nostrum eum aut eligendi officia nisi dolorem consequuntur atque. Laudantium, ea! Quae pariatur eligendi dolore. Ducimus quos illo tenetur doloribus ipsum minus ullam corrupti aut, in illum cupiditate, aliquid dignissimos sit iste accusantium maiores exercitationem possimus similique culpa sint necessitatibus"
-      </p>
-    </div>
-
-
+    <h1 id="take-out">Takeout Journal</h1>
+    <ul id="nav-list">
+      <li class="nav-bar"><a href ="index.html">Home</a></li>
+      <li class="nav-bar"><a href ="result.html">Result</a></li>
+      <li class="nav-bar"><a href ="about.html">About Us</a></li>
+    </ul>
   </header>
+
+<!-- Table used for setting spacing and placement -->
+<table class="aboutUs"> <!-- 'aboutUs' uses unique styling-->
+
+  <!-- Team member 1 -->
+  <tr>
+    <td><img class="photo" src="image/zeyob.jpg" alt="photo1"> </td>
+    <td><h1 class ="teamMember">Eyob Tamir</h1> </td>
+  </tr>
+  <tr>
+    <td>
+      <a href="https/github.com/Eyob1984">; <img class="icon" src="image/github.png" alt="github"> </a>
+      <a href="https://www.linkedin.com/in/sample-link-ab1b4015a/">; <img class="icon" src="image/linkedin.png" alt="linkedin"> </a>
+    </td>
+    <td class="paraCell"><p class="about-paragraph">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur tempora delectus magni consequatur minima. Quia esse asperiores neque atque? Hic sapiente, maxime fugit magni consectetur asperiores accusamus alias tempora, excepturi velit saepe voluptate culpa cumque dolorum sint ratione repellat eos tenetur neque vitae. Voluptates vero unde nulla perspiciatis, molestias consequuntur placeat libero maxime aliquam dolorum facere eveniet explicabo nihil maiores, adipisci tenetur corporis autem totam minus doloribus quasi tempore dolore? Labore blanditiis consequuntur recusandae. Consequatur.
+    </p></td>
+  </tr>
+  
+  <!-- Team member 2 -->
+  <tr>
+    <td><img class="photo" src="image/zmatthew.png" alt="photo2"></td>
+    <td><h1 class ="teamMember">Matthew Johnson</h1></td>
+  </tr>
+  <tr>
+    <td>
+      <a href="https/github.com/Eyob1984">; <img class="icon" src="image/github.png" alt="github"> </a>
+      <a href="https://www.linkedin.com/in/sample-link-ab1b4015a/">; <img class="icon" src="image/linkedin.png" alt="linkedin"> </a>
+    </td>
+    <td class="paraCell"><p class="about-paragraph">
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim maxime quia nisi nesciunt corrupti repudiandae ad, amet quae, eaque libero aspernatur delectus accusantium earum minima. Ex, sint dicta nisi tempore tenetur autem! Quaerat rem accusamus dolor magni pariatur ex consequuntur officia. Veritatis voluptate cumque nostrum, voluptatum itaque molestiae dolor numquam fuga optio soluta voluptatem impedit, consequuntur tenetur nam fugit reiciendis eius totam, quo accusantium delectus dolorum! Voluptate excepturi, voluptatem quas placeat reprehenderit id tempore totam?
+    </p></td>
+  </tr>
+
+  <!-- Team member 3 -->
+  <tr>
+    <td><img class="photo" src="image/zpatrick.jpg" alt="photo3"></td>
+    <td><h1 class ="teamMember">Patrick Lathrop</h1></td>
+  </tr>
+  <tr>
+    <td>
+      <a href="https/github.com/Eyob1984">; <img class="icon" src="image/github.png" alt="github"> </a>
+      <a href="https://www.linkedin.com/in/sample-link-ab1b4015a/">; <img class="icon" src="image/linkedin.png" alt="linkedin"> </a>
+    </td>
+    <td class="paraCell"><p class="about-paragraph">
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repudiandae eos dignissimos obcaecati dolores a quia ducimus alias repellat nostrum voluptate sapiente porro assumenda officia nobis nulla officiis voluptatem, sed omnis enim. Odio accusamus numquam deserunt, inventore voluptatem libero aliquam praesentium aliquid optio aperiam maiores, tempore explicabo at laudantium corporis non neque, itaque magni quasi laborum vel ab quis ipsum! Animi error adipisci suscipit odit quisquam exercitationem cumque sed, mollitia, perferendis amet veniam doloremque fugit inventore?
+    </p></td>
+  </tr>
+
+</table>
 
 
 </body>

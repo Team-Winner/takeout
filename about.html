@@ -3,57 +3,71 @@
 <head>
 
   <meta charset="UTF-8">
-  <link rel="stylesheet" href="css/reset.css">
+  <!-- <link rel="stylesheet" href="css/reset.css"> -->
   <!-- <link rel="stylesheet" href="css/style.css"> -->
+  <link rel="stylesheet" href="reset.css">
   <link rel="stylesheet" href="style.css">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>About Us</title>
 
 <style>
-/* body is included for testing and needs to be copied over to style.css// */
-.body{
+/* body is included for testing and needs to be copied over to style.css// DELETE when no longer needed */
+/* .body{
     background-image: url(./image/back\ picture.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     border: 2px solid black;
-}
+} */
 
-.aboutUs {
+/* NOTE: All style code should be migrated to style.css before project completion */
+.aboutTable {
   margin-left: 250px;
   margin-top: 50px;
   border-collapse: separate;
   border-spacing: 0 1em;
   color: antiquewhite;
-  width: 65%;
-}
-
-.about-paragraph{
-font-family: Georgia, 'Times New Roman', Times, serif;
-font-size:large;
-}
-
-.paraCell{
-width: auto ;  
-background-color: black;
-opacity: 0.7;
-border-radius: 15px;
-padding-left: 20px;
-padding-right: 10px;
+  width: 70%;
 }
 
 .teamMember {
+  width:fit-content ;   
+  background: rgb(204,204,204);
+  background: rgba(12, 12, 12, 0.2);
+  border-radius: 15px;
+  padding-left: 20px;
+  padding-right: 10px;
+  font-size:3em;
+  text-align: center;
+  vertical-align: middle;
+}
+
+/* This is test code trying to center the name in the cell - only affects Team Member 3 - DELETE when no longer needed*/
+/* .teamMemberTest {
   width: fit-content ;  
   background-color: black;
+  font-size:3em;
   opacity: 0.7;
   border-radius: 15px;
   padding-left: 20px;
-  padding-right: 20px;
-}
+  padding-right: 10px;
+  text-align: center;
+} */
 
 .photo {
   height: 150px;
   border-radius: 25px;
+}
+
+.paraCell{
+width: auto ;  
+background: rgb(204,204,204);
+background: rgba(12, 12, 12, 0.4);
+border-radius: 15px;
+padding: 20px;
+text-align:justify;
+font-family: Georgia, 'Times New Roman', Times, serif;
+font-size:large;
 }
 
 .icon{
@@ -68,29 +82,47 @@ padding-right: 10px;
 </head>
 
 <body>
-  <header>
-    <h1 id="take-out">Takeout Journal</h1>
-    <ul id="nav-list">
-      <li class="nav-bar"><a href ="index.html">Home</a></li>
-      <li class="nav-bar"><a href ="result.html">Result</a></li>
-      <li class="nav-bar"><a href ="about.html">About Us</a></li>
-    </ul>
-  </header>
 
-<!-- Table used for setting spacing and placement -->
-<table class="aboutUs"> <!-- 'aboutUs' uses unique styling-->
+   <!-- ///////////////////////////// HEADER SEPERATION - IN DEVELOPMENT BY EYOB ////////////////////////////////////////// -->
+
+  <header>
+    <div id="logo">
+    <img src="./image/logo (2).png">
+    </div>
+ <div id="nav-list">
+  <ul id="link-list"> 
+    <li class="nav-bar"><a href ="index.html">Home</a></li></li>>
+    <li class="nav-bar"><a href ="result.html">Result</a></li>
+    <li class="nav-bar"><a href ="about.html">About Us</a></li>
+  </ul>
+ </div>
+ <div id="social-list">
+    <ul>
+    <li><a href="index.html"><img src="./image/Facebook.png" class="social"></a></li>
+    <li><a href="index.html"><img src="./image/Linkedin (1).png" class="social"></a></li>
+    <li><a href="index.html"><img src="./image/Twitter.png" class="social"></a></li>
+    <li><a href="index.html"><img src="./image/Youtube.png" class="social"></a></li>
+    <li><a href="index.html"><img src="./image/Pinterest.png" class="social"></a></li>
+   </ul>
+  </div>
+ </header>
+
+ <!-- ///////////////////////////// HEADER SEPERATION - IN DEVELOPMENT BY EYOB ////////////////////////////////////////// -->
+ 
+<!-- Table used to set spacing and placement -->
+<table class="aboutTable"> <!-- 'aboutTable' uses unique styling -->
 
   <!-- Team member 1 -->
   <tr>
-    <td><img class="photo" src="image/zeyob.jpg" alt="photo1"> </td>
-    <td><h1 class ="teamMember">Eyob Tamir</h1> </td>
+    <td><img class="photo" src="image/zeyob.jpg" alt="photo1"> </td> <!-- 'photo' uses unique styling -->
+    <td class ="teamMember">Eyob Tamir</td> <!-- 'teamMember' uses unique styling -->
   </tr>
   <tr>
     <td>
-      <a href="https/github.com/Eyob1984">; <img class="icon" src="image/github.png" alt="github"> </a>
+      <a href="https/github.com/Eyob1984">; <img class="icon" src="image/github.png" alt="github"> </a> <!-- 'icon' uses unique styling -->
       <a href="https://www.linkedin.com/in/sample-link-ab1b4015a/">; <img class="icon" src="image/linkedin.png" alt="linkedin"> </a>
     </td>
-    <td class="paraCell"><p class="about-paragraph">
+    <td class="paraCell"><p> <!-- 'paraCell' uses unique styling -->
       Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur tempora delectus magni consequatur minima. Quia esse asperiores neque atque? Hic sapiente, maxime fugit magni consectetur asperiores accusamus alias tempora, excepturi velit saepe voluptate culpa cumque dolorum sint ratione repellat eos tenetur neque vitae. Voluptates vero unde nulla perspiciatis, molestias consequuntur placeat libero maxime aliquam dolorum facere eveniet explicabo nihil maiores, adipisci tenetur corporis autem totam minus doloribus quasi tempore dolore? Labore blanditiis consequuntur recusandae. Consequatur.
     </p></td>
   </tr>
@@ -98,14 +130,14 @@ padding-right: 10px;
   <!-- Team member 2 -->
   <tr>
     <td><img class="photo" src="image/zmatthew.png" alt="photo2"></td>
-    <td><h1 class ="teamMember">Matthew Johnson</h1></td>
+    <td class ="teamMember">Matthew Johnson</td>
   </tr>
   <tr>
     <td>
-      <a href="https/github.com/Eyob1984">; <img class="icon" src="image/github.png" alt="github"> </a>
+      <a href="https://github.com/SEAsouthern">; <img class="icon" src="image/github.png" alt="github"> </a>
       <a href="https://www.linkedin.com/in/sample-link-ab1b4015a/">; <img class="icon" src="image/linkedin.png" alt="linkedin"> </a>
     </td>
-    <td class="paraCell"><p class="about-paragraph">
+    <td class="paraCell"><p>
       Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim maxime quia nisi nesciunt corrupti repudiandae ad, amet quae, eaque libero aspernatur delectus accusantium earum minima. Ex, sint dicta nisi tempore tenetur autem! Quaerat rem accusamus dolor magni pariatur ex consequuntur officia. Veritatis voluptate cumque nostrum, voluptatum itaque molestiae dolor numquam fuga optio soluta voluptatem impedit, consequuntur tenetur nam fugit reiciendis eius totam, quo accusantium delectus dolorum! Voluptate excepturi, voluptatem quas placeat reprehenderit id tempore totam?
     </p></td>
   </tr>
@@ -113,20 +145,28 @@ padding-right: 10px;
   <!-- Team member 3 -->
   <tr>
     <td><img class="photo" src="image/zpatrick.jpg" alt="photo3"></td>
-    <td><h1 class ="teamMember">Patrick Lathrop</h1></td>
+       <td class ="teamMember">Patrick Lathrop</td>
+       <!-- <td><h1 class ="teamMemberTest">Patrick Lathrop</h1></td> -->
   </tr>
   <tr>
     <td>
-      <a href="https/github.com/Eyob1984">; <img class="icon" src="image/github.png" alt="github"> </a>
+      <a href="https/github.com/patricklathrop">; <img class="icon" src="image/github.png" alt="github"> </a>
       <a href="https://www.linkedin.com/in/sample-link-ab1b4015a/">; <img class="icon" src="image/linkedin.png" alt="linkedin"> </a>
     </td>
-    <td class="paraCell"><p class="about-paragraph">
+    <td class="paraCell"><p>
       Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repudiandae eos dignissimos obcaecati dolores a quia ducimus alias repellat nostrum voluptate sapiente porro assumenda officia nobis nulla officiis voluptatem, sed omnis enim. Odio accusamus numquam deserunt, inventore voluptatem libero aliquam praesentium aliquid optio aperiam maiores, tempore explicabo at laudantium corporis non neque, itaque magni quasi laborum vel ab quis ipsum! Animi error adipisci suscipit odit quisquam exercitationem cumque sed, mollitia, perferendis amet veniam doloremque fugit inventore?
     </p></td>
   </tr>
 
 </table>
 
+<!-- ///////////////////////////// FOOTER SEPERATION - IN DEVELOPMENT BY EYOB ////////////////////////////////////////// -->
+
+<footer>
+  @ team winner project 201 
+</footer>
+
+<!-- ///////////////////////////// FOOTER SEPERATION - IN DEVELOPMENT BY EYOB ////////////////////////////////////////// -->
 
 </body>
 </html>

@@ -1,7 +1,7 @@
 # takeout
 Takeout Journal - Code201d55
 
-## Day 1 - Fri, 12/20 // In the beginning... there was a project
+## Day 1 - Fri, 12/20/19 // In the beginning... there was a project
 
 ## Wireframes
 ### Home Wireframe
@@ -14,7 +14,7 @@ Takeout Journal - Code201d55
 ![About Wireframe](https://github.com/Team-Winner/takeout/blob/master/image/wire-about.png)
 
 
-## Day 2 - Fri, 12/27 //
+## Day 2 - Fri, 12/27/19 //
 
 ## User Stories
 
@@ -47,11 +47,23 @@ Takeout Journal - Code201d55
 ### Domain Modeling
 ![DOM](https://github.com/Team-Winner/takeout/blob/master/image/dom.png)
 
-## Additional notes for Friday, 27/12/19
+## Additional notes for Friday, 12/27/19
 
 Leads assigned:
   Eyob Tamir - CSS design
   Matthew Johnson - Index.html and initial JS coding
-  Patrick Lathrop - About.html and github reviewer
+  Patrick Lathrop (PAL) - About.html and github reviewer
 
- Team members will review their areas of resposibilities over the weekend and notify the team via slack if there are any new ACP merges to be reviewed.   
+  - Matthew completed coding for the initial forms page and began coding the app.js file.  
+  - Eyob completed initial coding for style.css
+  - Patrick completed reviews of sample pages for the about.html page / collected team pictures and began initial coding.
+
+  Team members will review their areas of responsibilities over the weekend and notify the team via slack if there are any new ACP merges to be reviewed.   
+
+ ## Update notes for Sat/Sun, 12/28-29/19
+
+ Patrick completed initial work on the about.html page using a table to maintain element/data integrity regardless the size of the page.  Eyob worked on the header/footer and style sheet over the weekend.  Both provided updates and conversed complete needed merges.
+
+ ## Update notes for Monday, 12/30/19
+
+ 

@@ -2,30 +2,28 @@ body{
     background: url(./image/back\ picture.jpg) repeat;
     border: 2px solid black;
 }
-header{
+
+#logo img{
+  display: block;
   text-align: center;
-  background-color: #333;
-  
 }
-#take-out{
-  display: inline-block;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  font-size: 26px;
-  margin-left: 20px;
-  margin-top: 20px;
-  color: white; 
-  position: sticky;
-}
-#nav-list{
-  display: inline;
-}
-.nav-bar{
-  display: inline-block;
-  font-size: 20px;
-  padding: 10px;
+
+#nav-list ul{
+  display: block;
+text-align: center;
 }
 li a:hover {
   background-color: #111;
+}
+#social-list ul{
+  float: right;
+  background-color: #f2f2f2;
+  opacity: 0.7;
+}
+.social{
+  height: 30px;
+  width: 30px;
+  padding: 5px;
 }
 #div-form{
   border-radius: 8px;

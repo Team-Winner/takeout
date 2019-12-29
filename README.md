@@ -62,8 +62,11 @@ Leads assigned:
 
  ## Update notes for Sat/Sun, 12/28-29/19
 
- Patrick completed initial work on the about.html page using a table to maintain element/data integrity regardless the size of the page.  Eyob worked on the header/footer and style sheet over the weekend.  Both provided updates and conversed complete needed merges.
+ Patrick completed initial work on the about.html page using a table to maintain element/data integrity regardless the size of the page.  Eyob worked on the header/footer and style sheet over the weekend.  Both provided updates and discussed any merge conflicts as needed.
 
  ## Update notes for Monday, 12/30/19
+ Then there was PROJECT week....
+
+ 
 
  

@@ -1,6 +1,8 @@
 body{
-    background: url(./image/back\ picture.jpg) repeat;
-    border: 2px solid black;
+  background-image: url(./image/back\ picture.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  border: 2px solid black;
 }
 
 #logo img{

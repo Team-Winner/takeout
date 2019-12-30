@@ -4,14 +4,13 @@ body{
   background-repeat: no-repeat;
   border: 2px solid black;
 }
-  
+
 p{
-  margin-top: 5px;
-  position: fixed;
+  margin-top: 3px;
+  text-align: center;
   top: 3px;
-  right:400px;
-  left: 400px;
-  background-color: #333;
+  background: rgb(204,204,204);
+  background: rgba(12, 12, 12, 0.2);
   opacity: 0.7;
   border-radius: 10px;
 }
@@ -19,6 +18,7 @@ a :hover{
   background-color: #45a049;
 }
 #nav-list .link-list{
+  position: fixed;
   float: left; 
 }
 .link-list li{

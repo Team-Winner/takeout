@@ -41,42 +41,61 @@ function handleFormSubmitted(event) {
 
   var newTakeout = new Takeout(nameValue, walkTimeValue, waitTimeValue, priceValue, ratingValue);
 
-  // newTakeout.render();
+  // below is sending data to local storage
+
+  localStorage.setItem('savedTakeout', JSON.stringify(takeout));
+  for (var i = 0; i < takeout.length; i++);
+
+  newTakeout.render();
+}
+
+// Below is the function to pull the Takeout data from local storage.
+
+var savedTakeoutString = localStorage.getItem('savedTakeout');
+if (savedTakeoutString) {
+  var arrayOfNotTakeout = JSON.parse(savedTakeoutString);
+  for (var k = 0; k < arrayOfNotTakeout.length; k++) {
+    new Takeout(arrayOfNotTakeout[k].name, arrayOfNotTakeout[k].walkTime, arrayOfNotTakeout[k].waitTime, arrayOfNotTakeout[k].price, arrayOfNotTakeout[k].rating);
+  }
+
+} else {
+
+  new Takeout('Subway', '5', '2', 'med', '3star');
 }
 
 var formElement = document.getElementById('new-takeout');
 formElement.addEventListener('submit', handleFormSubmitted);
 
-// This is the function that will render the data table. I want to get the data to just render first before I work on adding to and displaying from Local Storage.
+// This is the function that will render the data table.
 
-// Takeout.prototype.render = function() {
-//   var takeoutTable = document.getElementById('takeout-table');
+Takeout.prototype.render = function() {
+  var takeoutTable = document.getElementById('takeout-table');
 
-//   var takeoutRow = document.createElement('tr');
+  var takeoutRow = document.createElement('tr');
 
-//   var nameCell = document.createElement('td');
-//   nameCell.textContent = this.name;
-//   takeoutRow.appendChild(nameCell);
+  var nameCell = document.createElement('td');
+  nameCell.textContent = this.name;
+  takeoutRow.appendChild(nameCell);
 
-//   var walkTimeCell = document.createElement('td');
-//   walkTimeCell.textContent = this.walkTime;
-//   takeoutRow.appendChild(walkTimeCell);
+  var walkTimeCell = document.createElement('td');
+  walkTimeCell.textContent = this.walkTime;
+  takeoutRow.appendChild(walkTimeCell);
 
-//   var waitTimeCell = document.createElement('td');
-//   waitTimeCell.textContent = this.waitTime;
-//   takeoutRow.appendChild(waitTimeCell);
+  var waitTimeCell = document.createElement('td');
+  waitTimeCell.textContent = this.waitTime;
+  takeoutRow.appendChild(waitTimeCell);
 
-//   var priceCell = document.createElement('td');
-//   priceCell.textContent = this.price;
-//   takeoutRow.appendChild(priceCell);
+  var priceCell = document.createElement('td');
+  priceCell.textContent = this.price;
+  takeoutRow.appendChild(priceCell);
 
-//   var ratingCell = document.createElement('td');
-//   ratingCell.textContent = this.rating;
-//   takeoutRow.appendChild(ratingCell);
-// };
+  var ratingCell = document.createElement('td');
+  ratingCell.textContent = this.rating;
+  takeoutRow.appendChild(ratingCell);
+};
 
-// for (var i = 0; i <takeout.length; i++) {
-//   takeout[i].render();
-// }
+for (var i = 0; i <takeout.length; i++) {
+  takeout[i].render();
+}
 
 console.log('takeout', takeout);

@@ -62,7 +62,9 @@ if (savedTakeoutString) {
 
 } else {
 
-  new Takeout('Subway', '5', '2', '12', 'med', '3star');
+  new Takeout('Subway', '5', '2', '12', 'low', '3star');
+  new Takeout('Mantra', '4', '10', '20', 'med', '3star');
+  new Takeout('7-11', '4', '2', '10', 'low', '1star');
 }
 
 var formElement = document.getElementById('new-takeout');

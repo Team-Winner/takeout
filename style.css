@@ -14,16 +14,20 @@ p{
   opacity: 0.7;
   border-radius: 10px;
 }
+
 a :hover{
   background-color: rgba(12, 12, 12);
 }
+
 #nav-list .link-list{
   position: fixed;
   float: left; 
 }
+
 .link-list :hover{
   background-color: rgba(12, 12, 12);
 }
+
 .link-list li{
   padding-top: 15px;
   background-color: #f2f2f2; 
@@ -31,9 +35,8 @@ a :hover{
   margin-top: 50px;
   opacity: 0.5;
   border-radius: 7px;
-  
-  
 }
+
 .nav-bar{
   border-radius: 5px; 
   margin-top: 225px;
@@ -49,6 +52,7 @@ a :hover{
   opacity: 0.7;
   border-radius: 7px;
 }
+
 .social{
   height: 35px;
   width: 35px;
@@ -65,16 +69,64 @@ a :hover{
   margin-right: 400px;
   opacity: 0.7;
 }
+
 .class-takeout{
   padding: 3px;
   margin-top: 5px;
 }
+
 input[type=submit]:hover {
   background-color: #45a049;
 }
+
 footer{
   margin-top: 300px;
   text-align: center;
   background-color: #333;
   color:white;
+}
+
+/* About Page */
+.aboutTable {
+  margin-left: 250px;
+  margin-top: 50px;
+  border-collapse: separate;
+  border-spacing: 0 1em;
+  color: antiquewhite;
+  width: 70%;
+}
+
+.teamMember {
+  width:fit-content ;   
+  background: rgb(204,204,204);
+  background: rgba(12, 12, 12, 0.2);
+  border-radius: 15px;
+  padding-left: 20px;
+  padding-right: 10px;
+  font-size:3em;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.photo {
+  height: 150px;
+  border-radius: 25px;
+}
+
+.paraCell{
+width: auto ;  
+background: rgb(204,204,204);
+background: rgba(12, 12, 12, 0.4);
+border-radius: 15px;
+padding: 20px;
+text-align:justify;
+font-family: Georgia, 'Times New Roman', Times, serif;
+font-size:large;
+}
+
+.icon{
+  width: 1.5em;
+  margin-left: 0.2em;
+  margin-bottom: 0.4em;
+  cursor: pointer;
 }

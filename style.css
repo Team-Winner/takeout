@@ -79,12 +79,26 @@ input[type=submit]:hover {
   background-color: #45a049;
 }
 
-footer{
-  margin-top: 300px;
+/* Footer */
+#page-container {
+  position: relative;
+  min-height: 100vh;
+}
+
+#content-wrap {
+  padding-bottom: 2.0rem;    /* Footer height */
+}
+
+#footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 2.05rem;            /* Footer height */
   text-align: center;
   background-color: #333;
   color:white;
 }
+
 
 /* About Page */
 .aboutTable {
@@ -133,4 +147,15 @@ font-size:large;
 td{
   color:wheat;
   font-size: 22px;
+}
+
+/* Results page */
+
+#takeout-table {
+  margin-left: 250px;
+  margin-top: 50px;
+  border-collapse: separate;
+  border-spacing: 0 1em;
+  color: antiquewhite;
+  width: 70%;
 }

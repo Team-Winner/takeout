@@ -8,10 +8,11 @@ var takeout = [];
 
 // Below is my constructor function.
 
-function Takeout( nameOfThisRestaraunt, walkTime, waitTime, price, rating, ) {
+function Takeout( nameOfThisRestaraunt, walkTime, waitTime, totalTime, price, rating) {
   this.name = nameOfThisRestaraunt;
-  this.walkTime = walkTime;
-  this.waitTime = waitTime;
+  this.walkTime = parseInt(walkTime, 10);
+  this.waitTime = parseInt(waitTime, 10);
+  this.totalTime = this.walkTime + this.waitTime + this.walkTime;
   this.price = price;
   this.rating = rating;
   takeout.push(this);
@@ -20,7 +21,7 @@ function Takeout( nameOfThisRestaraunt, walkTime, waitTime, price, rating, ) {
 
 // This is the function that will take in the data entered in the form and put in the constructor function.
 
-  // below is sending data to local storage
+// below is sending data to local storage
 
 
 // Below is the function to pull the Takeout data from local storage.
@@ -29,12 +30,14 @@ var savedTakeoutString = localStorage.getItem('savedTakeout');
 if (savedTakeoutString) {
   var arrayOfNotTakeout = JSON.parse(savedTakeoutString);
   for (var k = 0; k < arrayOfNotTakeout.length; k++) {
-    new Takeout(arrayOfNotTakeout[k].name, arrayOfNotTakeout[k].walkTime, arrayOfNotTakeout[k].waitTime, arrayOfNotTakeout[k].price, arrayOfNotTakeout[k].rating);
+    new Takeout(arrayOfNotTakeout[k].name, arrayOfNotTakeout[k].walkTime, arrayOfNotTakeout[k].waitTime, arrayOfNotTakeout[k].totalTime, arrayOfNotTakeout[k].price, arrayOfNotTakeout[k].rating);
   }
 
 } else {
 
-  new Takeout('Subway', '5', '2', 'med', '3star');
+  new Takeout('Subway', '5', '2', '12', 'low', '3star');
+  new Takeout('Mantra', '4', '10', '20', 'med', '3star');
+  new Takeout('7-11', '4', '2', '10', 'low', '1star');
 }
 console.log('takeout', takeout);
 

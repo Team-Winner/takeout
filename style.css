@@ -2,7 +2,7 @@ body{
   background-image: url(./image/back\ picture.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  border: 2px solid black;
+  /* border: 2px solid black; */
 }
 
 p{
@@ -129,4 +129,8 @@ font-size:large;
   margin-left: 0.2em;
   margin-bottom: 0.4em;
   cursor: pointer;
+}
+td{
+  color:wheat;
+  font-size: 22px;
 }

@@ -8,15 +8,15 @@ var takeout = [];
 
 // Below is my constructor function.
 
-function Takeout(nameOfThisRestaraunt, walkTime, waitTime, price, rating) {
+function Takeout(nameOfThisRestaraunt, walkTime, waitTime, totalTime, price, rating) {
   this.name = nameOfThisRestaraunt;
-  this.walkTime = walkTime;
-  this.waitTime = waitTime;
+  this.walkTime = parseInt(walkTime, 10);
+  this.waitTime = parseInt(waitTime, 10);
+  this.totalTime = this.walkTime + this.waitTime + this.walkTime;
   this.price = price;
   this.rating = rating;
   takeout.push(this);
 }
-
 
 // This is the function that will take in the data entered in the form and put in the constructor function.
 
@@ -33,13 +33,15 @@ function handleFormSubmitted(event) {
   var waitTimeInput = document.getElementById('wait-time');
   var waitTimeValue = waitTimeInput.value;
 
+  var totalTimeValue = this.totalTime;
+
   var priceInput = document.getElementById('price');
   var priceValue = priceInput.value;
 
   var ratingInput = document.getElementById('rating');
   var ratingValue = ratingInput.value;
 
-  var newTakeout = new Takeout(nameValue, walkTimeValue, waitTimeValue, priceValue, ratingValue);
+  var newTakeout = new Takeout(nameValue, walkTimeValue, waitTimeValue, totalTimeValue, priceValue, ratingValue);
 
   // below is sending data to local storage
 
@@ -55,12 +57,12 @@ var savedTakeoutString = localStorage.getItem('savedTakeout');
 if (savedTakeoutString) {
   var arrayOfNotTakeout = JSON.parse(savedTakeoutString);
   for (var k = 0; k < arrayOfNotTakeout.length; k++) {
-    new Takeout(arrayOfNotTakeout[k].name, arrayOfNotTakeout[k].walkTime, arrayOfNotTakeout[k].waitTime, arrayOfNotTakeout[k].price, arrayOfNotTakeout[k].rating);
+    new Takeout(arrayOfNotTakeout[k].name, arrayOfNotTakeout[k].walkTime, arrayOfNotTakeout[k].waitTime, arrayOfNotTakeout[k].totalTime, arrayOfNotTakeout[k].price, arrayOfNotTakeout[k].rating);
   }
 
 } else {
 
-  new Takeout('Subway', '5', '2', 'med', '3star');
+  new Takeout('Subway', '5', '2', '12', 'med', '3star');
 }
 
 var formElement = document.getElementById('new-takeout');

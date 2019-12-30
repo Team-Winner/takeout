@@ -49,7 +49,7 @@ function handleFormSubmitted(event) {
   localStorage.setItem('savedTakeout', JSON.stringify(takeout));
   for (var i = 0; i < takeout.length; i++);
 
-  
+
   document.getElementById('new-takeout').reset();
 }
 

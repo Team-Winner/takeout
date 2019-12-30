@@ -16,12 +16,16 @@ p{
 }
 
 a :hover{
-  background-color: #45a049;
+  background-color: rgba(12, 12, 12);
 }
 
 #nav-list .link-list{
   position: fixed;
   float: left; 
+}
+
+.link-list :hover{
+  background-color: rgba(12, 12, 12);
 }
 
 .link-list li{

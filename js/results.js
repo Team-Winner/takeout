@@ -47,7 +47,7 @@ Takeout.prototype.render = function() {
   var takeoutRow = document.createElement('tr');
 
   var nameCell = document.createElement('td');
-  nameCell.textContent = this.name;
+  nameCell.innerHTML = this.name;
   takeoutRow.appendChild(nameCell);
 
   var walkTimeCell = document.createElement('td');
@@ -80,3 +80,78 @@ for (var i = 0; i <takeout.length; i++) {
 }
 
 console.log('takeout', takeout);
+
+// Below are the functions for sorting takeout array based on different clicks on the table headers.
+
+function sortByTotalTime (event) {
+  takeout.sort(function (a, b) {
+    return a.totalTime - b.totalTime;
+  });
+  // Takeout.takeoutTable.innerHTML = '';
+  for (var i = 0; i <takeout.length; i++) {
+    takeout[i].render();
+  }
+};
+
+// sort by name
+// takeout.sort(function(a, b) {
+//   var nameA = a.name.toUpperCase(); // ignore upper and lowercase
+//   var nameB = b.name.toUpperCase(); // ignore upper and lowercase
+//   if (nameA < nameB) {
+//     return -1;
+//   }
+//   if (nameA > nameB) {
+//     return 1;
+//   }
+
+//   // names must be equal
+//   return 0;
+// });
+
+// Below is the function for sorting the table. Reference from w3schools.
+// https://www.w3schools.com/howto/howto_js_sort_table.asp
+
+// Takeout.prototype.sortTable = function(n) {
+//   var table, rows, x, y, shouldSwitch, switchcount = 0;
+
+//   var switching = true;
+//   var dir = "asc";
+
+//   table = document.getElementById("takeout-table");
+
+  
+
+//   while (switching) {
+//     switching = false;
+//     rows = table.rows;
+//     for (var i = 2; i < rows.length; i++) {
+//       shouldSwitch = false;
+//       debugger;
+//       x = rows[i].getElementsByTagName("td")[n];
+//       console.log('hello, im x', x)
+//       y = rows[i + 1].getElementsByTagName("td")[n];
+//       if (dir == "asc") {
+//         if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()) {
+//           shouldSwitch = true;
+//           break;
+//         }
+//       } else if (dir == "desc") {
+//         if (x.innerHTML.toLowerCase() < y.innerHTML.toLowerCase()) {
+//           shouldSwitch = true;
+//           break;
+//         }
+//       }
+//     }
+//     if (shouldSwitch) {
+//       rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
+//       switching = true;
+//       switchcount ++;
+//     } else {
+//       if (switchcount == 0 && dir == "asc") {
+//         dir = "desc";
+//         switching = true;
+//       }
+//     }
+//   }
+
+// };

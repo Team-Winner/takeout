@@ -145,9 +145,16 @@ font-size:large;
   margin-bottom: 0.4em;
   cursor: pointer;
 }
+
 td{
   color:wheat;
   font-size: 22px;
+}
+
+th{
+  color:wheat;
+  font-size: 22px;
+  font-weight: bold;
 }
 
 /* Results page */

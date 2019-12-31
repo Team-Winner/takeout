@@ -155,7 +155,7 @@ td{
 #takeout-table {
   margin-left: 250px;
   margin-top: 50px;
-  border-collapse: separate;
+  border-collapse: collapse;
   border-spacing: 0 1em;
   background: rgb(204,204,204);
   background: rgba(12, 12, 12, 0.4);

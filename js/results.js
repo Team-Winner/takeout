@@ -42,7 +42,7 @@ console.log('takeout', takeout);
 // This is the function that will render the data table.
 
 Takeout.prototype.render = function() {
-  var takeoutTable = document.getElementById('takeout-table');
+  var takeoutTableBody = document.getElementById('takeout-table-body');
 
   var takeoutRow = document.createElement('tr');
 
@@ -70,7 +70,7 @@ Takeout.prototype.render = function() {
   ratingCell.textContent = this.rating;
   takeoutRow.appendChild(ratingCell);
 
-  takeoutTable.appendChild(takeoutRow);
+  takeoutTableBody.appendChild(takeoutRow);
 
 
 };
@@ -87,7 +87,8 @@ function sortByTotalTime (event) {
   takeout.sort(function (a, b) {
     return a.totalTime - b.totalTime;
   });
-  // Takeout.takeoutTable.innerHTML = '';
+  var takeoutTableBody = document.getElementById('takeout-table-body');
+  takeoutTableBody.innerHTML = '';
   for (var i = 0; i <takeout.length; i++) {
     takeout[i].render();
   }

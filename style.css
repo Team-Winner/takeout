@@ -151,15 +151,23 @@ td{
 }
 
 /* Results page */
-
 #takeout-table {
   margin-left: 250px;
-  margin-top: 50px;
+  margin-top: 50px; 
+}
+
+#takeout-table {
   border-collapse: separate;
   border-spacing: 0 1em;
-  background: rgb(204,204,204);
-  background: rgba(12, 12, 12, 0.4);
+  height: 100px;
   width: 70%;
+  overflow-y: scroll;
   border-radius: 8px;
-  
+  background: rgb(204,204,204);
+  background: rgba(12, 12, 12, 0.5);
 }
+#takeout-table tr:nth-child(even){
+  background: rgb(204,204,204);
+  background: rgba(12, 12, 12, 0.3);
+}
+

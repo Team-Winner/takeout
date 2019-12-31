@@ -157,6 +157,9 @@ td{
   margin-top: 50px;
   border-collapse: separate;
   border-spacing: 0 1em;
-  color: antiquewhite;
+  background: rgb(204,204,204);
+  background: rgba(12, 12, 12, 0.4);
   width: 70%;
+  border-radius: 8px;
+  
 }

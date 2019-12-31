@@ -1,8 +1,7 @@
 body{
-  background-image: url(./image/back\ picture.jpg);
+  background-image: url(../image/back\ picture.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  /* border: 2px solid black; */
 }
 
 p{
@@ -61,18 +60,32 @@ a :hover{
 
 #div-form{
   border-radius: 8px;
-  background-color: #f2f2f2;
+  background: rgb(204,204,204);
+  background: rgba(12, 12, 12, 0.2);
+  color: antiquewhite;
   padding: 20px;
+  font-size: 25px;
   text-align: center;
   margin-top: 200px;
   margin-left: 400px;
-  margin-right: 400px;
-  opacity: 0.7;
+  margin-right: 400px
 }
 
 .class-takeout{
   padding: 3px;
   margin-top: 5px;
+  font-size: 15px;
+}
+
+.submitID{
+  border-radius: 15px;
+  padding: 10px;
+  
+}
+
+button:hover{
+  background-color: rgba(12, 12, 12);
+  color: antiquewhite;
 }
 
 input[type=submit]:hover {
@@ -118,7 +131,7 @@ input[type=submit]:hover {
   border-radius: 15px;
   padding-left: 20px;
   padding-right: 10px;
-  font-size:3em;
+  font-size:50px;
   text-align: center;
   vertical-align: middle;
 }
@@ -133,10 +146,13 @@ width: auto ;
 background: rgb(204,204,204);
 background: rgba(12, 12, 12, 0.4);
 border-radius: 15px;
-padding: 20px;
-text-align:justify;
+padding: 15px;
 font-family: Georgia, 'Times New Roman', Times, serif;
-font-size:large;
+font-size: 20px;
+text-align:justify;
+display: inline-block;
+vertical-align: middle;
+
 }
 
 .icon{
@@ -158,22 +174,41 @@ th{
 }
 
 /* Results page */
-#takeout-table {
-  margin-left: 250px;
+/* Takeout Results page */
+#resultHeader{
+  font-size: 50px;
+  text-decoration: underline;
+}
 
+#takeout-table {
+  margin-left: 350px;
   margin-top: 50px;
   border-collapse: collapse;
-
+  border-radius: 15px;
   border-spacing: 0 1em;
   height: 100px;
-  width: 70%;
+  width: 75%;
   overflow-y: scroll;
-  border-radius: 8px;
+  border-radius: 15px;
   background: rgb(204,204,204);
   background: rgba(12, 12, 12, 0.5);
-}
+  }
+
 #takeout-table tr:nth-child(even){
   background: rgb(204,204,204);
   background: rgba(12, 12, 12, 0.3);
 }
 
+#takeout-table, td, th {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color: antiquewhite;
+  text-align: center;
+  font-size: 25px;
+  width: auto;
+  padding: 10px;
+}
+
+#takeout-table, th {
+  font-size: 30px;
+  padding: 20px;
+}

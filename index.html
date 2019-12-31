@@ -3,8 +3,8 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="./reset.css" />
-    <link rel="stylesheet" type="text/css" href="./style.css" />
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
     <title>Takeout Journal - Home</title>
   </head>
   <body>
@@ -29,18 +29,22 @@
         </header>
         <main>
           <div id ="div-form">
+           
             <form id="new-takeout">
 
                <fieldset>
                   <legend>Takeout Details</legend>
+                  <label>User Name:
+                  <input type="text" id="user-name" class="class-takeout" required />
+                  </label></br>
                   <label>Restaurant Name:
-                  <input type="text" id="name" class="class-takeout" />
+                  <input type="text" id="name" class="class-takeout" required/>
                   </label></br>
                   <label>Walk Time:
-                  <input type="number" id="walk-time"class="class-takeout">
+                  <input type="number" id="walk-time"class="class-takeout" required>
                   </label></br>
                   <label>Wait Time:
-                  <input type="number" id="wait-time"class="class-takeout">
+                  <input type="number" id="wait-time"class="class-takeout" required>
                   </label></br>
                   Price:
                   <select id="price"class="class-takeout">
@@ -58,8 +62,8 @@
                      <option value="&#9733;&#9733;&#9733;&#9733;" class="class-takeout">Four Star</option>
                   </select>
                   </br>
-                  <button type="submit" value="submit" class="class-takeout" >Submit Only</button>
-                  <button type="submit" value="submit" onclick="window.location = 'results.html';" class="class-takeout" >Submit & Results</button>
+                  <button type="submit" value="submit" class="class-takeout submitID" >Submit Only</button>
+                  <button type="submit" value="submit" onclick="window.location = 'results.html';" class="class-takeout submitID" >Submit & Results</button>
                 </label>
                </fieldset>
 

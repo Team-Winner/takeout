@@ -3,10 +3,9 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="reset.css" />
-    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
     <title>Takeout Journal - Results Page</title>
-    <!-- <script src="js/app.js" type="text/javascript"></script> -->
  <head>
   <body>
     <div id="page-container">
@@ -29,22 +28,22 @@
           </div>
         </header>
         <main>
-          <!-- <div id="takeout-holder">
-            </div> -->
           <table id="takeout-table">
             <tr>
-              <td colspan="6">
-                <center>
+              <td id="resultHeader", colspan="6">
                 Results
               </td>
             </tr>
             <tr>
-              <th id="name">Name</th>
+
+              <th>User Name</th>
+              <th>Res.Name</th>
               <th>Walk Time</th>
               <th>Wait Time</th>
               <th onclick="sortByTotalTime()">Total Time</th>
               <th>Price</th>
               <th>Rating</th>
+
             </tr>
             <tbody id="takeout-table-body">
             </tbody>

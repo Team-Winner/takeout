@@ -8,8 +8,8 @@ var takeout = [];
 
 // Below is my constructor function.
 
-function Takeout(nameOfThisRestaraunt, walkTime, waitTime, totalTime, price, rating) {
-
+function Takeout(username1, nameOfThisRestaraunt, walkTime, waitTime, totalTime, price, rating) {
+  this.username = username1;
   this.name = nameOfThisRestaraunt;
   this.walkTime = parseInt(walkTime, 10);
   this.waitTime = parseInt(waitTime, 10);
@@ -24,6 +24,8 @@ function Takeout(nameOfThisRestaraunt, walkTime, waitTime, totalTime, price, rat
 function handleFormSubmitted(event) {
   event.preventDefault();
   console.log('event', event);
+  var userNameInput = document.getElementById('user-name');
+  var userNameValue = userNameInput.value;
 
   var nameInput = document.getElementById('name');
   var nameValue = nameInput.value;
@@ -42,14 +44,14 @@ function handleFormSubmitted(event) {
   var ratingInput = document.getElementById('rating');
   var ratingValue = ratingInput.value;
 
-  var newTakeout = new Takeout(nameValue, walkTimeValue, waitTimeValue, totalTimeValue, priceValue, ratingValue);
+  var newTakeout = new Takeout(userNameValue, nameValue, walkTimeValue, waitTimeValue, totalTimeValue, priceValue, ratingValue);
 
   // below is sending data to local storage
 
   localStorage.setItem('savedTakeout', JSON.stringify(takeout));
   for (var i = 0; i < takeout.length; i++);
 
-  
+
   document.getElementById('new-takeout').reset();
 }
 
@@ -59,14 +61,14 @@ var savedTakeoutString = localStorage.getItem('savedTakeout');
 if (savedTakeoutString) {
   var arrayOfNotTakeout = JSON.parse(savedTakeoutString);
   for (var k = 0; k < arrayOfNotTakeout.length; k++) {
-    new Takeout(arrayOfNotTakeout[k].name, arrayOfNotTakeout[k].walkTime, arrayOfNotTakeout[k].waitTime, arrayOfNotTakeout[k].totalTime, arrayOfNotTakeout[k].price, arrayOfNotTakeout[k].rating);
+    new Takeout(arrayOfNotTakeout[k].username,arrayOfNotTakeout[k].name, arrayOfNotTakeout[k].walkTime, arrayOfNotTakeout[k].waitTime, arrayOfNotTakeout[k].totalTime, arrayOfNotTakeout[k].price, arrayOfNotTakeout[k].rating);
   }
 
 } else {
 
-  new Takeout('Subway', '5', '2', '12', 'low', '3star');
-  new Takeout('Mantra', '4', '10', '20', 'med', '3star');
-  new Takeout('7-11', '4', '2', '10', 'low', '1star');
+  new Takeout('mat','Subway', '5', '2', '12', 'low', '3star');
+  new Takeout('teddy','Mantra', '4', '10', '20', 'med', '3star');
+  new Takeout('bella','7-11', '4', '2', '10', 'low', '1star');
 }
 console.log('takeout', takeout);
 

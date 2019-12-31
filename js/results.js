@@ -90,6 +90,28 @@ console.log('takeout', takeout);
 
 // Below are the functions for sorting takeout array based on different clicks on the table headers.
 
+function sortByWalkTime (event) {
+  takeout.sort(function (a, b) {
+    return a.walkTime - b.walkTime;
+  });
+  var takeoutTableBody = document.getElementById('takeout-table-body');
+  takeoutTableBody.innerHTML = '';
+  for (var i = 0; i <takeout.length; i++) {
+    takeout[i].render();
+  }
+};
+
+function sortByWaitTime (event) {
+  takeout.sort(function (a, b) {
+    return a.waitTime - b.waitTime;
+  });
+  var takeoutTableBody = document.getElementById('takeout-table-body');
+  takeoutTableBody.innerHTML = '';
+  for (var i = 0; i <takeout.length; i++) {
+    takeout[i].render();
+  }
+};
+
 function sortByTotalTime (event) {
   takeout.sort(function (a, b) {
     return a.totalTime - b.totalTime;

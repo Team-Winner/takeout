@@ -152,21 +152,42 @@ td{
 
 /* Results page */
 #takeout-table {
-  margin-left: 250px;
+  margin-left: 350px;
 
   margin-top: 50px;
   border-collapse: collapse;
-
+  border-radius: 15px;
   border-spacing: 0 1em;
   height: 100px;
-  width: 70%;
+  width: 80%;
   overflow-y: scroll;
-  border-radius: 8px;
+  border-radius: 15px;
   background: rgb(204,204,204);
   background: rgba(12, 12, 12, 0.5);
+  
 }
+
+#resultHeader{
+  font-size: 40px;
+  text-decoration: underline;
+}
+
 #takeout-table tr:nth-child(even){
   background: rgb(204,204,204);
   background: rgba(12, 12, 12, 0.3);
 }
 
+#takeout-table, td, th {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color: antiquewhite;
+  text-align: center;
+  font-size: 25px;
+  width: auto;
+  padding: 10px;
+}
+
+#takeout-table, th {
+  font-size: 30px;
+  /* width: auto; */
+  padding: 20px;
+}

@@ -34,10 +34,10 @@ if (savedTakeoutString) {
 
 } else {
 
-  new Takeout('Mat','Subway', '5', '2', '12', 'low', '★★★☆');
-  new Takeout('Teddy','Mantra', '4', '10', '20', 'med', '★★★☆');
-  new Takeout('Bella','7-11', '4', '2', '10', 'low', '★☆☆☆');
-  new Takeout('Drew','Buffalo Wild Wings', '16', '2', '34', 'med', '★★☆☆');
+  new Takeout('Mat','Subway', '5', '2', '12', '$', '★★★☆');
+  new Takeout('Teddy','Mantra', '4', '10', '20', '$$', '★★★☆');
+  new Takeout('Bella','7-11', '4', '2', '10', '$', '★☆☆☆');
+  new Takeout('Drew','Buffalo Wild Wings', '16', '2', '34', '$$', '★★☆☆');
 }
 console.log('takeout', takeout);
 

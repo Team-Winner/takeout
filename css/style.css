@@ -162,6 +162,18 @@ vertical-align: middle;
   cursor: pointer;
 }
 
+td{
+  color:wheat;
+  font-size: 22px;
+}
+
+th{
+  color:wheat;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+/* Results page */
 /* Takeout Results page */
 #resultHeader{
   font-size: 50px;

@@ -214,3 +214,9 @@ th{
   font-size: 30px;
   padding: 20px;
 }
+#rest{
+  margin-right: 60px;
+}
+#wait{
+  margin-left: 5px;
+}

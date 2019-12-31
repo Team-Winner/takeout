@@ -4,8 +4,6 @@ console.log('js linked!');
 
 var takeout = [];
 
-// 27DEC 1613. Function is now taking in the data from the form. Next steps are to put the data into local storage and then pull the info out of local storage to render on the results page. The render function has been writen but is commented out.
-
 // Below is my constructor function.
 
 function Takeout(username1, nameOfThisRestaraunt, walkTime, waitTime, totalTime, price, rating) {
@@ -36,16 +34,17 @@ if (savedTakeoutString) {
 
 } else {
 
-  new Takeout('mat','Subway', '5', '2', '12', 'low', '3star');
-  new Takeout('teddy','Mantra', '4', '10', '20', 'med', '3star');
-  new Takeout('bella','7-11', '4', '2', '10', 'low', '1star');
+  new Takeout('Mat','Subway', '5', '2', '12', 'low', '★★★☆');
+  new Takeout('Teddy','Mantra', '4', '10', '20', 'med', '★★★☆');
+  new Takeout('Bella','7-11', '4', '2', '10', 'low', '★☆☆☆');
+  new Takeout('Drew','Buffalo Wild Wings', '16', '2', '34', 'med', '★★☆☆');
 }
 console.log('takeout', takeout);
 
 // This is the function that will render the data table.
 
 Takeout.prototype.render = function() {
-  var takeoutTable = document.getElementById('takeout-table');
+  var takeoutTableBody = document.getElementById('takeout-table-body');
 
   var takeoutRow = document.createElement('tr');
 
@@ -77,7 +76,7 @@ Takeout.prototype.render = function() {
   ratingCell.textContent = this.rating;
   takeoutRow.appendChild(ratingCell);
 
-  takeoutTable.appendChild(takeoutRow);
+  takeoutTableBody.appendChild(takeoutRow);
 
 
 };
@@ -90,15 +89,54 @@ console.log('takeout', takeout);
 
 // Below are the functions for sorting takeout array based on different clicks on the table headers.
 
+function sortByWalkTime (event) {
+  takeout.sort(function (a, b) {
+    return a.walkTime - b.walkTime;
+  });
+  var takeoutTableBody = document.getElementById('takeout-table-body');
+  takeoutTableBody.innerHTML = '';
+  for (var i = 0; i <takeout.length; i++) {
+    takeout[i].render();
+  }
+}
+
+function sortByWaitTime (event) {
+  takeout.sort(function (a, b) {
+    return a.waitTime - b.waitTime;
+  });
+  var takeoutTableBody = document.getElementById('takeout-table-body');
+  takeoutTableBody.innerHTML = '';
+  for (var i = 0; i <takeout.length; i++) {
+    takeout[i].render();
+  }
+}
+
 function sortByTotalTime (event) {
   takeout.sort(function (a, b) {
     return a.totalTime - b.totalTime;
   });
-  // Takeout.takeoutTable.innerHTML = '';
+  var takeoutTableBody = document.getElementById('takeout-table-body');
+  takeoutTableBody.innerHTML = '';
   for (var i = 0; i <takeout.length; i++) {
     takeout[i].render();
   }
-};
+}
+
+function sortByRating (event) {
+  takeout.sort(function (a, b) {
+    if (a.rating > b.rating) {
+      return 1;
+    }
+    else if (b.rating > a.rating) {
+      return -1;
+    }
+  });
+  var takeoutTableBody = document.getElementById('takeout-table-body');
+  takeoutTableBody.innerHTML = '';
+  for (var i = 0; i <takeout.length; i++) {
+    takeout[i].render();
+  }
+}
 
 // sort by name
 // takeout.sort(function(a, b) {
@@ -114,51 +152,3 @@ function sortByTotalTime (event) {
 //   // names must be equal
 //   return 0;
 // });
-
-// Below is the function for sorting the table. Reference from w3schools.
-// https://www.w3schools.com/howto/howto_js_sort_table.asp
-
-// Takeout.prototype.sortTable = function(n) {
-//   var table, rows, x, y, shouldSwitch, switchcount = 0;
-
-//   var switching = true;
-//   var dir = "asc";
-
-//   table = document.getElementById("takeout-table");
-
-  
-
-//   while (switching) {
-//     switching = false;
-//     rows = table.rows;
-//     for (var i = 2; i < rows.length; i++) {
-//       shouldSwitch = false;
-//       debugger;
-//       x = rows[i].getElementsByTagName("td")[n];
-//       console.log('hello, im x', x)
-//       y = rows[i + 1].getElementsByTagName("td")[n];
-//       if (dir == "asc") {
-//         if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()) {
-//           shouldSwitch = true;
-//           break;
-//         }
-//       } else if (dir == "desc") {
-//         if (x.innerHTML.toLowerCase() < y.innerHTML.toLowerCase()) {
-//           shouldSwitch = true;
-//           break;
-//         }
-//       }
-//     }
-//     if (shouldSwitch) {
-//       rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
-//       switching = true;
-//       switchcount ++;
-//     } else {
-//       if (switchcount == 0 && dir == "asc") {
-//         dir = "desc";
-//         switching = true;
-//       }
-//     }
-//   }
-
-// };

@@ -37,14 +37,16 @@
             <tr>
 
               <th>User Name</th>
-              <th>Res.Name</th>
-              <th>Walk Time</th>
-              <th>Wait Time</th>
+              <th>Res. Name</th>
+              <th onclick="sortByWalkTime()">Walk Time</th>
+              <th onclick="sortByWaitTime()">Wait Time</th>
               <th onclick="sortByTotalTime()">Total Time</th>
               <th>Price</th>
-              <th>Rating</th>
+              <th onclick="sortByRating()">Rating</th>
 
             </tr>
+            <tbody id="takeout-table-body">
+            </tbody>
           </table>
         </main>
       </div>

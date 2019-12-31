@@ -4,8 +4,6 @@ console.log('js linked!');
 
 var takeout = [];
 
-// 27DEC 1613. Function is now taking in the data from the form. Next steps are to put the data into local storage and then pull the info out of local storage to render on the results page. The render function has been writen but is commented out.
-
 // Below is my constructor function.
 
 function Takeout( nameOfThisRestaraunt, walkTime, waitTime, totalTime, price, rating) {
@@ -59,6 +57,10 @@ Takeout.prototype.render = function() {
   var waitTimeCell = document.createElement('td');
   waitTimeCell.textContent = this.waitTime;
   takeoutRow.appendChild(waitTimeCell);
+
+  var totalTimeCell = document.createElement('td');
+  totalTimeCell.textContent = this.totalTime;
+  takeoutRow.appendChild(totalTimeCell);
 
   var priceCell = document.createElement('td');
   priceCell.textContent = this.price;

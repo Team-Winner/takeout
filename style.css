@@ -60,18 +60,33 @@ a :hover{
 
 #div-form{
   border-radius: 8px;
-  background-color: #f2f2f2;
+  background: rgb(204,204,204);
+  background: rgba(12, 12, 12, 0.2);
+  color: antiquewhite;
   padding: 20px;
+  font-size: 25px;
   text-align: center;
   margin-top: 200px;
   margin-left: 400px;
   margin-right: 400px;
-  opacity: 0.7;
+ 
 }
 
 .class-takeout{
   padding: 3px;
   margin-top: 5px;
+  font-size: 15px;
+}
+
+.submitID{
+  border-radius: 15px;
+  padding: 10px;
+  
+}
+
+button:hover{
+  background-color: rgba(12, 12, 12);
+  color: antiquewhite;
 }
 
 input[type=submit]:hover {
@@ -148,7 +163,6 @@ vertical-align: middle;
   cursor: pointer;
 }
 
-
 /* Takeout Results page */
 #resultHeader{
   font-size: 50px;
@@ -162,7 +176,7 @@ vertical-align: middle;
   border-radius: 15px;
   border-spacing: 0 1em;
   height: 100px;
-  width: 80%;
+  width: 75%;
   overflow-y: scroll;
   border-radius: 15px;
   background: rgb(204,204,204);

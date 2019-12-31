@@ -123,15 +123,21 @@ function sortByTotalTime (event) {
   }
 }
 
-// function sortByPrice (event) {
-//   takeout.sort(function (a, b) {
-//     if (a.price.length > b.price.length) {
-//       return 1;
-//     }
-//     else if (b.price.length > a.price.length) {
-//       return -1;
-//     }
-//   });
+function sortByPrice (event) {
+  takeout.sort(function (a, b) {
+    if (a.price.length > b.price.length) {
+      return 1;
+    }
+    else if (b.price.length > a.price.length) {
+      return -1;
+    }
+  });
+  var takeoutTableBody = document.getElementById('takeout-table-body');
+  takeoutTableBody.innerHTML = '';
+  for (var i = 0; i <takeout.length; i++) {
+    takeout[i].render();
+  }
+}
 
 function sortByRating (event) {
   takeout.sort(function (a, b) {

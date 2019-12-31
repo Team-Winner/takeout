@@ -35,7 +35,8 @@ if (savedTakeoutString) {
 } else {
 
   new Takeout('Mat','Subway', '5', '2', '12', '$', '★★★☆');
-  new Takeout('Teddy','Mantra', '4', '10', '20', '$$', '★★★☆');
+  new Takeout('Sally','Mantra', '4', '10', '20', '$$', '★★★☆');
+  new Takeout('Keith','Japonesa', '20', '7', '47', '$$$', '★★★★');
   new Takeout('Bella','7-11', '4', '2', '10', '$', '★☆☆☆');
   new Takeout('Drew','Buffalo Wild Wings', '16', '2', '34', '$$', '★★☆☆');
 }
@@ -122,15 +123,15 @@ function sortByTotalTime (event) {
   }
 }
 
-function sortByPrice (event) {
-  takeout.sort(function (a, b) {
-    if (a.price > b.price) {
-      return 1;
-    }
-    else if (b.price > a.price) {
-      return -1;
-    }
-  });
+// function sortByPrice (event) {
+//   takeout.sort(function (a, b) {
+//     if (a.price.length > b.price.length) {
+//       return 1;
+//     }
+//     else if (b.price.length > a.price.length) {
+//       return -1;
+//     }
+//   });
 
 function sortByRating (event) {
   takeout.sort(function (a, b) {

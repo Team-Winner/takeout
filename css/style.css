@@ -80,8 +80,15 @@ a :hover{
 .submitID{
   border-radius: 15px;
   padding: 10px;
-  
 }
+
+#ratingID{
+  margin-left: 250px;
+}
+
+/* .takeStar{margin-left: 350px
+
+} */
 
 button:hover{
   background-color: rgba(12, 12, 12);
@@ -112,7 +119,6 @@ input[type=submit]:hover {
   background-color: #333;
   color:white;
 }
-
 
 /* About Page */
 .aboutTable {
@@ -152,7 +158,6 @@ font-size: 20px;
 text-align:justify;
 display: inline-block;
 vertical-align: middle;
-
 }
 
 .icon{
@@ -162,7 +167,7 @@ vertical-align: middle;
   cursor: pointer;
 }
 
-td{
+/* td{
   color:wheat;
   font-size: 22px;
 }
@@ -171,27 +176,24 @@ th{
   color:wheat;
   font-size: 22px;
   font-weight: bold;
-}
+} */
 
-/* Results page */
 /* Takeout Results page */
 #resultHeader{
-  font-size: 50px;
+  font-size: 40px;
   text-decoration: underline;
 }
 
 #takeout-table {
-  margin-left: 350px;
+  margin-left: 250px;
   margin-top: 50px;
   border-collapse: collapse;
   border-radius: 15px;
   border-spacing: 0 1em;
-  height: 100px;
-  width: 75%;
-  overflow-y: scroll;
-  border-radius: 15px;
+  /* height: 100px;
+  width: 50%; */
   background: rgb(204,204,204);
-  background: rgba(12, 12, 12, 0.5);
+  background: rgba(12, 12, 12, 0.3);
   }
 
 #takeout-table tr:nth-child(even){

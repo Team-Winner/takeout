@@ -65,10 +65,9 @@ Takeout.prototype.render = function() {
   waitTimeCell.textContent = this.waitTime;
   takeoutRow.appendChild(waitTimeCell);
 
-  var waitTimeCell = document.createElement('td');
-  waitTimeCell.textContent = this.waitTime;
-  takeoutRow.appendChild(waitTimeCell);
-
+  var totalTimeCell = document.createElement('td');
+  totalTimeCell.textContent = this.totalTime;
+  takeoutRow.appendChild(totalTimeCell);
 
   var priceCell = document.createElement('td');
   priceCell.textContent = this.price;

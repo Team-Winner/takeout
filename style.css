@@ -153,11 +153,10 @@ td{
 /* Results page */
 #takeout-table {
   margin-left: 250px;
-  margin-top: 50px; 
-}
 
-#takeout-table {
-  border-collapse: separate;
+  margin-top: 50px;
+  border-collapse: collapse;
+
   border-spacing: 0 1em;
   height: 100px;
   width: 70%;

@@ -62,10 +62,41 @@ Leads assigned:
 
  ## Update notes for Sat/Sun, 12/28-29/19
 
- Patrick completed initial work on the about.html page using a table to maintain element/data integrity regardless the size of the page.  Eyob worked on the header/footer and style sheet over the weekend.  Both provided updates and discussed any merge conflicts as needed.
+ - Patrick completed initial work on the about.html page using a table to maintain element/data integrity regardless the size of the page.  
+ - Eyob worked on the header/footer and style sheet over the weekend.  Both provided updates and discussed any merge conflicts as needed.
 
  ## Update notes for Monday, 12/30/19
  Then there was PROJECT week....
+ - Eyob resolved the populating the table on the results.html page and added an 'input/view results' button
+ - Matthew resolved pushing/pulling data to local storage, create preopulated data, update number inputs (preventing string errors), calculating and displaying totalTime
+ - Patrick resolved CSS style for the footer/header across the three pages, worked on table styling on results.html and assisted Eyob with peer coding.  Also logged team progress.
+
+## Update note for Tuesday, 12/31/19
+Todays Goal - Minimal Viable Product (MVP)
+
+- Eyob... 
+
+- Matthew...
+
+- Patrick...
+
+## Update note for Tuesday, 01/02/19
+ToDo - Need to practice presentation
+
+- Eyob... 
+
+- Matthew...
+
+- Patrick...
+
+## Update note for Tuesday, 01/03/19
+Then there was PROJECT presentation day...
+
+- Eyob... 
+
+- Matthew...
+
+- Patrick...
 
  
 

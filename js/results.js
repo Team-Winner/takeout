@@ -122,6 +122,16 @@ function sortByTotalTime (event) {
   }
 }
 
+function sortByPrice (event) {
+  takeout.sort(function (a, b) {
+    if (a.price > b.price) {
+      return 1;
+    }
+    else if (b.price > a.price) {
+      return -1;
+    }
+  });
+
 function sortByRating (event) {
   takeout.sort(function (a, b) {
     if (a.rating > b.rating) {
@@ -131,6 +141,7 @@ function sortByRating (event) {
       return -1;
     }
   });
+
   var takeoutTableBody = document.getElementById('takeout-table-body');
   takeoutTableBody.innerHTML = '';
   for (var i = 0; i <takeout.length; i++) {

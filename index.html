@@ -30,35 +30,39 @@
         <main>
           <div id ="div-form">
             <form id="new-takeout">
-              <fieldset>
-                <legend>Takeout Details</legend>
-                <label>Restaurant Name:
-                <input type="text" id="name" class="class-takeout" />
-                </label></br>
-                <label>Walk Time:
-                <input type="text" id="walk-time"class="class-takeout">
-                </label></br>
-                <label>Wait Time:
-                <input type="text" id="wait-time"class="class-takeout">
-                </label></br>
-                Price:
-                <select id="price"class="class-takeout">
-                  <option value="low" class="class-takeout">Less than $10</option>
-                  <option value="med" class="class-takeout">$10 - $15</option>
-                  <option value="hi" class="class-takeout">More than $15</option>
-                </select>
-                </br>
-                Rating:</br>
-                <select id="rating">
-                  <!-- Star sign refered from https://www.alt-codes.net/star_alt_code.php -->
-                  <option value="&#9733;&#9734;&#9734;&#9734;" class="class-takeout">One Star</option>
-                  <option value="&#9733;&#9733;&#9734;&#9734;" class="class-takeout">Two Star</option>
-                  <option value="&#9733;&#9733;&#9733;&#9734;" class="class-takeout">Three Star</option>
-                  <option value="&#9733;&#9733;&#9733;&#9733;" class="class-takeout">Four Star</option>
-                </select>
-                </br>
-                <input type="submit" value="submit" class="class-takeout" />
-              </fieldset>
+
+               <fieldset>
+                  <legend>Takeout Details</legend>
+                  <label>Restaurant Name:
+                  <input type="text" id="name" class="class-takeout" />
+                  </label></br>
+                  <label>Walk Time:
+                  <input type="number" id="walk-time"class="class-takeout">
+                  </label></br>
+                  <label>Wait Time:
+                  <input type="number" id="wait-time"class="class-takeout">
+                  </label></br>
+                  Price:
+                  <select id="price"class="class-takeout">
+                     <option value="low" class="class-takeout">Less than $10</option>
+                     <option value="med" class="class-takeout">$10 - $15</option>
+                     <option value="hi" class="class-takeout">More than $15</option>
+                  </select>
+                  </br>
+                  Rating:</br>
+                  <select id="rating">
+                    <!-- Star sign refered from https://www.alt-codes.net/star_alt_code.php -->
+                     <option value="&#9733;&#9734;&#9734;&#9734;" class="class-takeout">One Star</option>
+                     <option value="&#9733;&#9733;&#9734;&#9734;" class="class-takeout">Two Star</option>
+                     <option value="&#9733;&#9733;&#9733;&#9734;" class="class-takeout">Three Star</option>
+                     <option value="&#9733;&#9733;&#9733;&#9733;" class="class-takeout">Four Star</option>
+                  </select>
+                  </br>
+                  <button type="submit" value="submit" class="class-takeout" >Submit Only</button>
+                  <button type="submit" value="submit" onclick="window.location = 'results.html';" class="class-takeout" >Submit & Results</button>
+                </label>
+               </fieldset>
+
             </form>
           </div>
         </main>

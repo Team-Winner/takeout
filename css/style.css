@@ -86,10 +86,6 @@ a :hover{
   margin-left: 250px;
 }
 
-/* .takeStar{margin-left: 350px
-
-} */
-
 button:hover{
   background-color: rgba(12, 12, 12);
   color: antiquewhite;
@@ -167,17 +163,6 @@ vertical-align: middle;
   cursor: pointer;
 }
 
-/* td{
-  color:wheat;
-  font-size: 22px;
-}
-
-th{
-  color:wheat;
-  font-size: 22px;
-  font-weight: bold;
-} */
-
 /* Takeout Results page */
 #resultHeader{
   font-size: 40px;
@@ -190,8 +175,6 @@ th{
   border-collapse: collapse;
   border-radius: 15px;
   border-spacing: 0 1em;
-  /* height: 100px;
-  width: 50%; */
   background: rgb(204,204,204);
   background: rgba(12, 12, 12, 0.3);
   }
@@ -219,4 +202,11 @@ th{
 }
 #wait{
   margin-left: 5px;
+}
+
+span{
+  margin-right: 2px;
+}
+#rating{
+  margin-right: 45px;
 }

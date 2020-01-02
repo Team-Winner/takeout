@@ -15,12 +15,16 @@ p{
 }
 
 a :hover{
-  background-color: rgba(12, 12, 12);
+  background-color: rgba(204,204,204);
+  background: rgba(12, 12, 12, 0.2);
 }
 
 #nav-list .link-list{
-  position: fixed;
+  position: center;
   float: left; 
+  padding: 10px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  text-align: center;
 }
 
 .link-list :hover{
@@ -29,11 +33,16 @@ a :hover{
 
 .link-list li{
   padding-top: 15px;
-  background-color: #f2f2f2; 
+  background: rgb(204,204,204);
+  background: rgba(12, 12, 12, 0.3);
   margin-left: 8px;
   margin-top: 50px;
-  opacity: 0.5;
   border-radius: 7px;
+}
+
+#link-color{
+color: rgb(204,204,204);
+background: rgba(12, 12, 12, 0.2);
 }
 
 .nav-bar{
@@ -52,21 +61,21 @@ a :hover{
   border-radius: 7px;
 }
 
-.social{
+/* .social{
   height: 35px;
   width: 35px;
   padding: 5px;
-}
+} */
 
 #div-form{
   border-radius: 8px;
   background: rgb(204,204,204);
-  background: rgba(12, 12, 12, 0.2);
+  background: rgba(12, 12, 12, 0.5);
   color: antiquewhite;
   padding: 20px;
   font-size: 25px;
   text-align: center;
-  margin-top: 200px;
+  margin-top: 150px;
   margin-left: 400px;
   margin-right: 400px
 }
@@ -172,6 +181,7 @@ vertical-align: middle;
 #takeout-table {
   margin-left: 250px;
   margin-top: 50px;
+  table-layout: auto;
   border-collapse: collapse;
   border-radius: 15px;
   border-spacing: 0 1em;
@@ -188,13 +198,13 @@ vertical-align: middle;
   font-family: Georgia, 'Times New Roman', Times, serif;
   color: antiquewhite;
   text-align: center;
-  font-size: 25px;
+  font-size: 22px;
   width: auto;
-  padding: 10px;
+  padding-bottom: 10px;
 }
 
 #takeout-table, th {
-  font-size: 30px;
+  font-size: 27px;
   padding: 20px;
 }
 #rest{

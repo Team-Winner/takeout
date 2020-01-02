@@ -14,24 +14,15 @@
           <div id="nav-list">
             <p><img src="./image/logo (2).png" class="logo" alt="logo"></p>
             <ul class="link-list">
-              <li><a href ="index.html" class="nav-bar">Home</a></li>
-              <li><a href ="results.html" class="nav-bar">Result</a></li>
-              <li><a href ="about.html" class="nav-bar">About Us</a></li>
-            </ul>
-            <ul class="social-list">
-              <li><a href="index.html"><img src="./image/Facebook.png" class="social" alt="FB icon"></a></li>
-              <li><a href="index.html"><img src="./image/Linkedin (1).png" class="social" alt="Linkedin"></a></li>
-              <li><a href="index.html"><img src="./image/Twitter.png" class="social" alt="Twitter"></a></li>
-              <li><a href="index.html"><img src="./image/Youtube.png" class="social" alt="Youtube"></a></li>
-              <li><a href="index.html"><img src="./image/Pinterest.png" class="social" alt="Pinterest"></a></li>
+              <li><a href ="index.html" id="link-color" class="nav-bar">Home</a></li>
+              <li><a href ="results.html" id="link-color" class="nav-bar">Result</a></li>
+              <li><a href ="about.html" id="link-color" class="nav-bar">About Us</a></li>
             </ul>
           </div>
         </header>
         <main>
           <div id ="div-form">
-           
             <form id="new-takeout">
-
                <fieldset>
                   <legend>Takeout Details</legend>
                   <label>User Name:
@@ -43,7 +34,7 @@
                   <label>Walk Time:
                   <input type="number" id="walk-time"class="class-takeout" required>
                   </label></br>
-                  <label>Wait Time:
+                  <label id="wait">Wait Time:
                   <input type="number" id="wait-time"class="class-takeout" required>
                   </label></br>
                   Price:
@@ -53,20 +44,19 @@
                      <option value="&#36;&#36;&#36;" class="class-takeout">More than $15</option>
                   </select>
                   </br>
-                  Rating:</br>
-                  <select id="rating">
+                  <span>Rating:</span>
+                  <select id="rating"class="class-takeout">
                     <!-- Star sign refered from https://www.alt-codes.net/star_alt_code.php -->
-                     <option value="&#9733;&#9734;&#9734;&#9734;" class="class-takeout">One Star</option>
-                     <option value="&#9733;&#9733;&#9734;&#9734;" class="class-takeout">Two Star</option>
-                     <option value="&#9733;&#9733;&#9733;&#9734;" class="class-takeout">Three Star</option>
-                     <option value="&#9733;&#9733;&#9733;&#9733;" class="class-takeout">Four Star</option>
+                     <option value="&#9733;&#9734;&#9734;&#9734;" class="class-takeout">★☆☆☆</option>
+                     <option value="&#9733;&#9733;&#9734;&#9734;" class="class-takeout">★★☆☆</option>
+                     <option value="&#9733;&#9733;&#9733;&#9734;" class="class-takeout">★★★☆</option>
+                     <option value="&#9733;&#9733;&#9733;&#9733;" class="class-takeout">★★★★</option>
                   </select>
                   </br>
                   <button type="submit" value="submit" class="class-takeout submitID" >Submit Only</button>
                   <button type="submit" value="submit" onclick="window.location = 'results.html';" class="class-takeout submitID" >Submit & Results</button>
                 </label>
                </fieldset>
-
             </form>
           </div>
         </main>

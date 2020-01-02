@@ -6,9 +6,9 @@ var takeout = [];
 
 // Below is my constructor function.
 
-function Takeout(userName1, nameOfThisRestaraunt, walkTime, waitTime, totalTime, price, rating) {
-  this.userName = userName1;
-  this.resName = nameOfThisRestaraunt;
+function Takeout(userName, resName, walkTime, waitTime, totalTime, price, rating) {
+  this.userName = userName;
+  this.resName = resName;
   this.walkTime = parseInt(walkTime, 10);
   this.waitTime = parseInt(waitTime, 10);
   this.totalTime = this.walkTime + this.waitTime + this.walkTime;

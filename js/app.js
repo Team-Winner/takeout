@@ -4,13 +4,11 @@ console.log('js linked!');
 
 var takeout = [];
 
-// 27DEC 1613. Function is now taking in the data from the form. Next steps are to put the data into local storage and then pull the info out of local storage to render on the results page. The render function has been writen but is commented out.
-
 // Below is my constructor function.
 
 function Takeout(username1, nameOfThisRestaraunt, walkTime, waitTime, totalTime, price, rating) {
   this.username = username1;
-  this.name = nameOfThisRestaraunt;
+  this.resName = nameOfThisRestaraunt;
   this.walkTime = parseInt(walkTime, 10);
   this.waitTime = parseInt(waitTime, 10);
   this.totalTime = this.walkTime + this.waitTime + this.walkTime;
@@ -27,8 +25,8 @@ function handleFormSubmitted(event) {
   var userNameInput = document.getElementById('user-name');
   var userNameValue = userNameInput.value;
 
-  var nameInput = document.getElementById('name');
-  var nameValue = nameInput.value;
+  var resNameInput = document.getElementById('res-name');
+  var resNameValue = resNameInput.value;
 
   var walkTimeInput = document.getElementById('walk-time');
   var walkTimeValue = walkTimeInput.value;
@@ -44,7 +42,7 @@ function handleFormSubmitted(event) {
   var ratingInput = document.getElementById('rating');
   var ratingValue = ratingInput.value;
 
-  var newTakeout = new Takeout(userNameValue, nameValue, walkTimeValue, waitTimeValue, totalTimeValue, priceValue, ratingValue);
+  var newTakeout = new Takeout(userNameValue, resNameValue, walkTimeValue, waitTimeValue, totalTimeValue, priceValue, ratingValue);
 
   // below is sending data to local storage
 
@@ -61,7 +59,7 @@ var savedTakeoutString = localStorage.getItem('savedTakeout');
 if (savedTakeoutString) {
   var arrayOfNotTakeout = JSON.parse(savedTakeoutString);
   for (var k = 0; k < arrayOfNotTakeout.length; k++) {
-    new Takeout(arrayOfNotTakeout[k].username,arrayOfNotTakeout[k].name, arrayOfNotTakeout[k].walkTime, arrayOfNotTakeout[k].waitTime, arrayOfNotTakeout[k].totalTime, arrayOfNotTakeout[k].price, arrayOfNotTakeout[k].rating);
+    new Takeout(arrayOfNotTakeout[k].username,arrayOfNotTakeout[k].resName, arrayOfNotTakeout[k].walkTime, arrayOfNotTakeout[k].waitTime, arrayOfNotTakeout[k].totalTime, arrayOfNotTakeout[k].price, arrayOfNotTakeout[k].rating);
   }
 
 } else {

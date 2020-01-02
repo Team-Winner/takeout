@@ -6,9 +6,9 @@ var takeout = [];
 
 // Below is my constructor function.
 
-function Takeout(username1, nameOfThisRestaraunt, walkTime, waitTime, totalTime, price, rating) {
-  this.username = username1;
-  this.name = nameOfThisRestaraunt;
+function Takeout(userName1, nameOfThisRestaraunt, walkTime, waitTime, totalTime, price, rating) {
+  this.userName = userName1;
+  this.resName = nameOfThisRestaraunt;
   this.walkTime = parseInt(walkTime, 10);
   this.waitTime = parseInt(waitTime, 10);
   this.totalTime = this.walkTime + this.waitTime + this.walkTime;
@@ -24,7 +24,7 @@ var savedTakeoutString = localStorage.getItem('savedTakeout');
 if (savedTakeoutString) {
   var arrayOfNotTakeout = JSON.parse(savedTakeoutString);
   for (var k = 0; k < arrayOfNotTakeout.length; k++) {
-    new Takeout(arrayOfNotTakeout[k].username,arrayOfNotTakeout[k].name, arrayOfNotTakeout[k].walkTime, arrayOfNotTakeout[k].waitTime, arrayOfNotTakeout[k].totalTime, arrayOfNotTakeout[k].price, arrayOfNotTakeout[k].rating);
+    new Takeout(arrayOfNotTakeout[k].username,arrayOfNotTakeout[k].resName, arrayOfNotTakeout[k].walkTime, arrayOfNotTakeout[k].waitTime, arrayOfNotTakeout[k].totalTime, arrayOfNotTakeout[k].price, arrayOfNotTakeout[k].rating);
   }
 
 } else {
@@ -45,15 +45,15 @@ Takeout.prototype.render = function() {
   var takeoutRow = document.createElement('tr');
 
   var userNameCell = document.createElement('td');
-  var userNameCapitalize = this.username[0].toUpperCase() + this.username.slice(1).toLowerCase();
-  userNameCell.textContent = userNameCapitalize;
+    var userNameCap = this.userName[0].toUpperCase() + this.userName.slice(1).toLowerCase();
+  userNameCell.textContent = userNameCap;
   takeoutRow.appendChild(userNameCell);
 
   // https://www.juniordevelopercentral.com/javascript-capitalize-first-letter/ was used as a reference for capitalizing the first letter of the username.
 
-  var nameCell = document.createElement('td');
-  nameCell.innerHTML = this.name;
-  takeoutRow.appendChild(nameCell);
+  var resNameCell = document.createElement('td');
+  resNameCell.textContent = this.resName;
+  takeoutRow.appendChild(resNameCell);
 
   var walkTimeCell = document.createElement('td');
   walkTimeCell.textContent = this.walkTime;
@@ -154,22 +154,22 @@ function sortByRating (event) {
   }
 }
 
-function sortByName (event) {
-  takeout.sort(function(a, b) {
-    var nameA = a.name.toUpperCase(); // ignore upper and lowercase
-    var nameB = b.name.toUpperCase(); // ignore upper and lowercase
-    if (nameA < nameB) {
-      return -1;
-    }
-    if (nameA > nameB) {
-      return 1;
-    }
-    return 0;
+// function sortByName (event) {
+//   takeout.sort(function(a, b) {
+//     var nameA = a.name.toUpperCase(); // ignore upper and lowercase
+//     var nameB = b.name.toUpperCase(); // ignore upper and lowercase
+//     if (nameA < nameB) {
+//       return -1;
+//     }
+//     if (nameA > nameB) {
+//       return 1;
+//     }
+//     return 0;
 
-    var takeoutTableBody = document.getElementById('takeout-table-body');
-    takeoutTableBody.innerHTML = '';
-    for (var i = 0; i <takeout.length; i++) {
-      takeout[i].render();
-    }
-  });
-}
+//     var takeoutTableBody = document.getElementById('takeout-table-body');
+//     takeoutTableBody.innerHTML = '';
+//     for (var i = 0; i <takeout.length; i++) {
+//       takeout[i].render();
+//     }
+//   });
+// }

@@ -210,3 +210,14 @@ span{
 #rating{
   margin-right: 45px;
 }
+#takeout-table ,th{
+  border: 1px solid gold;
+  
+}
+th{
+  cursor: pointer;
+}
+th :hover{
+  background-color: rgba(12, 12, 12);
+  
+}

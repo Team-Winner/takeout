@@ -18,11 +18,6 @@ function Takeout(username1, nameOfThisRestaraunt, walkTime, waitTime, totalTime,
 }
 
 
-// This is the function that will take in the data entered in the form and put in the constructor function.
-
-// below is sending data to local storage
-
-
 // Below is the function to pull the Takeout data from local storage.
 
 var savedTakeoutString = localStorage.getItem('savedTakeout');
@@ -50,8 +45,11 @@ Takeout.prototype.render = function() {
   var takeoutRow = document.createElement('tr');
 
   var userNameCell = document.createElement('td');
-  userNameCell.textContent = this.username;
+    var userNameCapitalize = this.username[0].toUpperCase() + this.username.slice(1).toLowerCase();
+  userNameCell.textContent = userNameCapitalize;
   takeoutRow.appendChild(userNameCell);
+
+  // https://www.juniordevelopercentral.com/javascript-capitalize-first-letter/ was used as a reference for capitalizing the first letter of the username.
 
   var nameCell = document.createElement('td');
   nameCell.innerHTML = this.name;
@@ -156,17 +154,22 @@ function sortByRating (event) {
   }
 }
 
-// sort by name
-// takeout.sort(function(a, b) {
-//   var nameA = a.name.toUpperCase(); // ignore upper and lowercase
-//   var nameB = b.name.toUpperCase(); // ignore upper and lowercase
-//   if (nameA < nameB) {
-//     return -1;
-//   }
-//   if (nameA > nameB) {
-//     return 1;
-//   }
+function sortByName (event) {
+  takeout.sort(function(a, b) {
+    var nameA = a.name.toUpperCase(); // ignore upper and lowercase
+    var nameB = b.name.toUpperCase(); // ignore upper and lowercase
+    if (nameA < nameB) {
+      return -1;
+    }
+    if (nameA > nameB) {
+      return 1;
+    }
+    return 0;
 
-//   // names must be equal
-//   return 0;
-// });
+    var takeoutTableBody = document.getElementById('takeout-table-body');
+    takeoutTableBody.innerHTML = '';
+    for (var i = 0; i <takeout.length; i++) {
+      takeout[i].render();
+    }
+  });
+}

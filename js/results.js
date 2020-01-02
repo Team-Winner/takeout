@@ -45,7 +45,7 @@ Takeout.prototype.render = function() {
   var takeoutRow = document.createElement('tr');
 
   var userNameCell = document.createElement('td');
-    var userNameCapitalize = this.username[0].toUpperCase() + this.username.slice(1).toLowerCase();
+  var userNameCapitalize = this.username[0].toUpperCase() + this.username.slice(1).toLowerCase();
   userNameCell.textContent = userNameCapitalize;
   takeoutRow.appendChild(userNameCell);
 

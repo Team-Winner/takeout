@@ -7,7 +7,7 @@ var takeout = [];
 // Below is my constructor function.
 
 function Takeout(username1, nameOfThisRestaraunt, walkTime, waitTime, totalTime, price, rating) {
-  this.username = username1;
+  this.userName = username1;
   this.resName = nameOfThisRestaraunt;
   this.walkTime = parseInt(walkTime, 10);
   this.waitTime = parseInt(waitTime, 10);
@@ -59,7 +59,7 @@ var savedTakeoutString = localStorage.getItem('savedTakeout');
 if (savedTakeoutString) {
   var arrayOfNotTakeout = JSON.parse(savedTakeoutString);
   for (var k = 0; k < arrayOfNotTakeout.length; k++) {
-    new Takeout(arrayOfNotTakeout[k].username,arrayOfNotTakeout[k].resName, arrayOfNotTakeout[k].walkTime, arrayOfNotTakeout[k].waitTime, arrayOfNotTakeout[k].totalTime, arrayOfNotTakeout[k].price, arrayOfNotTakeout[k].rating);
+    new Takeout(arrayOfNotTakeout[k].userName,arrayOfNotTakeout[k].resName, arrayOfNotTakeout[k].walkTime, arrayOfNotTakeout[k].waitTime, arrayOfNotTakeout[k].totalTime, arrayOfNotTakeout[k].price, arrayOfNotTakeout[k].rating);
   }
 
 } else {

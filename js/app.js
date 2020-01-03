@@ -1,14 +1,12 @@
 'use strict';
 
-console.log('js linked!');
-
 var takeout = [];
 
-// Below is my constructor function.
+// Below is our constructor function.
 
-function Takeout(username1, nameOfThisRestaraunt, walkTime, waitTime, totalTime, price, rating) {
-  this.userName = username1;
-  this.resName = nameOfThisRestaraunt;
+function Takeout(userName, resName, walkTime, waitTime, totalTime, price, rating) {
+  this.userName = userName;
+  this.resName = resName;
   this.walkTime = parseInt(walkTime, 10);
   this.waitTime = parseInt(waitTime, 10);
   this.totalTime = this.walkTime + this.waitTime + this.walkTime;
@@ -44,7 +42,7 @@ function handleFormSubmitted(event) {
 
   var newTakeout = new Takeout(userNameValue, resNameValue, walkTimeValue, waitTimeValue, totalTimeValue, priceValue, ratingValue);
 
-  // below is sending data to local storage
+  // Below is sending data to local storage
 
   localStorage.setItem('savedTakeout', JSON.stringify(takeout));
   for (var i = 0; i < takeout.length; i++);
@@ -70,12 +68,6 @@ if (savedTakeoutString) {
   new Takeout('Bella','7-11', '4', '2', '10', '$', '★☆☆☆');
   new Takeout('Drew','Buffalo Wild Wings', '16', '2', '34', '$$', '★★☆☆');
 }
-console.log('takeout', takeout);
 
 var formElement = document.getElementById('new-takeout');
 formElement.addEventListener('submit', handleFormSubmitted);
-
-// This is the function that will render the data table.
-
-
-console.log('takeout', takeout);

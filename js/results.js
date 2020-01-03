@@ -1,10 +1,8 @@
 'use strict';
 
-console.log('js linked!');
-
 var takeout = [];
 
-// Below is my constructor function.
+// Below is our constructor function.
 
 function Takeout(userName, resName, walkTime, waitTime, totalTime, price, rating) {
   this.userName = userName;
@@ -45,7 +43,7 @@ Takeout.prototype.render = function() {
   var takeoutRow = document.createElement('tr');
 
   var userNameCell = document.createElement('td');
-    var userNameCap = this.userName[0].toUpperCase() + this.userName.slice(1).toLowerCase();
+  var userNameCap = this.userName[0].toUpperCase() + this.userName.slice(1).toLowerCase();
   userNameCell.textContent = userNameCap;
   takeoutRow.appendChild(userNameCell);
 
@@ -83,8 +81,6 @@ Takeout.prototype.render = function() {
 for (var i = 0; i <takeout.length; i++) {
   takeout[i].render();
 }
-
-console.log('takeout', takeout);
 
 // Below are the functions for sorting takeout array based on different clicks on the table headers.
 
@@ -153,23 +149,3 @@ function sortByRating (event) {
     takeout[i].render();
   }
 }
-
-// function sortByName (event) {
-//   takeout.sort(function(a, b) {
-//     var nameA = a.name.toUpperCase(); // ignore upper and lowercase
-//     var nameB = b.name.toUpperCase(); // ignore upper and lowercase
-//     if (nameA < nameB) {
-//       return -1;
-//     }
-//     if (nameA > nameB) {
-//       return 1;
-//     }
-//     return 0;
-
-//     var takeoutTableBody = document.getElementById('takeout-table-body');
-//     takeoutTableBody.innerHTML = '';
-//     for (var i = 0; i <takeout.length; i++) {
-//       takeout[i].render();
-//     }
-//   });
-// }

@@ -1,70 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="css/reset.css">
-    <link rel="stylesheet" type="text/css" href="css/style.css">
-    <title>Takeout Journal - Home</title>
-  </head>
-  <body>
-    <div id="page-container">
-      <div id="content-wrap">
-        <header>
-          <div id="nav-list">
-            <p><img src="./image/logo (2).png" class="logo" alt="logo"></p>
-            <ul class="link-list">
-              <li><a href ="index.html" id="link-color" class="nav-bar">Home</a></li>
-              <li><a href ="results.html" id="link-color" class="nav-bar">Results</a></li>
-              <li><a href ="about.html" id="link-color" class="nav-bar">About Us</a></li>
-            </ul>
-          </div>
-        </header>
-        <main>
-          <div id ="div-form">
-            <form id="new-takeout">
-               <fieldset>
-                  <legend>Takeout Details</legend>
-                  <label>User Name:
-                  <input type="text" id="user-name" class="class-takeout" required />
-                  </label></br>
-                  <label>Restaurant Name:
-                  <input type="text" id="res-name" class="class-takeout" required/>
-                  </label></br>
-                  <label>Walk Time:
-                  <input type="number" id="walk-time"class="class-takeout" required>
-                  </label></br>
-                  <label id="wait">Wait Time:
-                  <input type="number" id="wait-time"class="class-takeout" required>
-                  </label></br>
-                  Price:
-                  <select id="price"class="class-takeout">
-                     <option value="&#36;" class="class-takeout">Less than $10</option>
-                     <option value="&#36;&#36;" class="class-takeout">$10 - $15</option>
-                     <option value="&#36;&#36;&#36;" class="class-takeout">More than $15</option>
-                  </select>
-                  </br>
-                  <span>Rating:</span>
-                  <select id="rating"class="class-takeout">
-                    <!-- Star sign refered from https://www.alt-codes.net/star_alt_code.php -->
-                     <option value="&#9733;&#9734;&#9734;&#9734;" class="class-takeout">★☆☆☆</option>
-                     <option value="&#9733;&#9733;&#9734;&#9734;" class="class-takeout">★★☆☆</option>
-                     <option value="&#9733;&#9733;&#9733;&#9734;" class="class-takeout">★★★☆</option>
-                     <option value="&#9733;&#9733;&#9733;&#9733;" class="class-takeout">★★★★</option>
-                  </select>
-                  </br>
-                  <button type="submit" value="submit" class="class-takeout submitID" >Submit Only</button>
-                  <button type="submit" value="submit" onclick="window.location = 'results.html';" class="class-takeout submitID" >Submit & Results</button>
-                </label>
-               </fieldset>
-            </form>
-          </div>
-        </main>
-      </div>
-      <footer id="footer">
-        @ team winner project 201 
-      </footer>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="css/reset.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <title>Takeout Journal - Home</title>
+</head>
+
+<body>
+  <div id="page-container">
+    <div id="content-wrap">
+      <header>
+        <div id="nav-list">
+          <!--
+            CODE REVIEW
+            Beware the use of spaces and special characters in images/file names
+          -->
+          <p><img src="./image/logo (2).png" class="logo" alt="logo"></p>
+          <ul class="link-list">
+            <li><a href="index.html" id="link-color" class="nav-bar">Home</a></li>
+            <li><a href="results.html" id="link-color" class="nav-bar">Results</a></li>
+            <li><a href="about.html" id="link-color" class="nav-bar">About Us</a></li>
+          </ul>
+        </div>
+      </header>
+      <main>
+        <div id="div-form">
+          <form id="new-takeout">
+            <fieldset>
+              <legend>Takeout Details</legend>
+              <!--
+                CODE REVIEW
+                Big fan of putting your inputs inside of your label ties them together
+                semantically very nicely. However, your prompts should have some markup
+                on them so that you can position/style them. I suggest a <span>
+                so that you can target them directly
+              -->
+              <label>User Name:
+                <input type="text" id="user-name" class="class-takeout" required />
+              </label></br>
+
+              <!--
+                CODE REVIEW
+                Do not use <br /> tags. HTML should only describe the content, never
+                dictate how a thing should look.  Use your CSS skills to provide
+                the correct layout, spacing between your label elements.
+              -->
+
+              <label>Restaurant Name:
+                <input type="text" id="res-name" class="class-takeout" required />
+              </label></br>
+              <label>Walk Time:
+                <input type="number" id="walk-time" class="class-takeout" required>
+              </label></br>
+              <label id="wait">Wait Time:
+                <input type="number" id="wait-time" class="class-takeout" required>
+              </label></br>
+              Price:
+              <select id="price" class="class-takeout">
+                <option value="&#36;" class="class-takeout">Less than $10</option>
+                <option value="&#36;&#36;" class="class-takeout">$10 - $15</option>
+                <option value="&#36;&#36;&#36;" class="class-takeout">More than $15</option>
+              </select>
+              </br>
+              <span>Rating:</span>
+              <select id="rating" class="class-takeout">
+                <!-- Star sign refered from https://www.alt-codes.net/star_alt_code.php -->
+                <option value="&#9733;&#9734;&#9734;&#9734;" class="class-takeout">★☆☆☆</option>
+                <option value="&#9733;&#9733;&#9734;&#9734;" class="class-takeout">★★☆☆</option>
+                <option value="&#9733;&#9733;&#9733;&#9734;" class="class-takeout">★★★☆</option>
+                <option value="&#9733;&#9733;&#9733;&#9733;" class="class-takeout">★★★★</option>
+              </select>
+              </br>
+              <button type="submit" value="submit" class="class-takeout submitID">Submit Only</button>
+
+              <!--
+                CODE REVIEW:
+                Avoid using inline javascript whenever possible.
+                Always best to separate concerns where you can. Keep HTML HTML and JS JS.
+                This might be better served with a checkbox in the form, and then doing
+                a redirect from the JS function after you process the input.
+
+                2 Buttons can confuse users.
+              -->
+              <button type="submit" value="submit" onclick="window.location = 'results.html';"
+                class="class-takeout submitID">Submit & Results</button>
+              </label>
+            </fieldset>
+          </form>
+        </div>
+      </main>
     </div>
-    <script src="js/app.js" type="text/javascript"></script>
-  </body>
+    <footer id="footer">
+      <!-- CODE REVIEW: Use &copy; to get the (c) symbol -->
+      @ team winner project 201
+    </footer>
+  </div>
+  <script src="js/app.js" type="text/javascript"></script>
+</body>
+
 </html>

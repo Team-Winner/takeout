@@ -1,227 +1,251 @@
-body{
-  background-image: url(../image/back\ picture.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
+/*
+  CODE REVIEW
+  Your CSS should be following SMACSS Rules
+*/
+
+body {
+  /*
+    CODE REVIEW
+    As you've noticed, spaces in file names are tough to handle
+    as a best practice, rename your files and make it less so.
+
+    Also, your background is very big and bright, making your text
+    difficult to read. Help your users out with some contrast.
+
+    Advice here is to add some opacity to the background image itself
+    (or use CSS to do so on the body) and then give a nice dark text
+    on a lighter placemat for legibility
+  */
+    background-image: url(../image/back\ picture.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
-p{
-  margin-top: 3px;
-  text-align: center;
-  top: 3px;
-  background: rgb(204,204,204);
-  background: rgba(12, 12, 12, 0.2);
-  border-radius: 10px;
+p {
+    margin-top: 3px;
+    text-align: center;
+    top: 3px;
+
+    /*
+      CODE REVIEW:
+      Why 2 background definitions? One will be ignored
+      (This happens elsewhere)
+    */
+    background: rgb(204, 204, 204);
+    background: rgba(12, 12, 12, 0.2);
+    border-radius: 10px;
 }
 
-a :hover{
-  background: rgba(204,204,204);
-  background: rgba(12, 12, 12, 0.3);
+a :hover {
+    background: rgba(204, 204, 204);
+    background: rgba(12, 12, 12, 0.3);
 }
 
-#nav-list .link-list{
-  position: center;
-  float: left; 
-  padding: 10px;
-  font-family: Georgia, 'Times New Roman', Times, serif;
-  text-align: center;
+#nav-list .link-list {
+    position: center;
+    float: left;
+    padding: 10px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
 }
 
-.link-list :hover{
-  background-color: rgba(12, 12, 12);
+.link-list :hover {
+    background-color: rgba(12, 12, 12);
 }
 
-.link-list li{
-  padding-top: 15px;
-  background: rgb(204,204,204);
-  background: rgba(12, 12, 12, 0.3);
-  margin-left: 8px;
-  margin-top: 50px;
-  border-radius: 7px;
+.link-list li {
+    padding-top: 15px;
+    background: rgb(204, 204, 204);
+    background: rgba(12, 12, 12, 0.3);
+    margin-left: 8px;
+    margin-top: 50px;
+    border-radius: 7px;
 }
 
-#link-color{
-color: rgb(204,204,204);
+#link-color {
+    color: rgb(204, 204, 204);
 }
 
-.nav-bar{
-  border-radius: 5px; 
-  margin-top: 225px;
-  font-size: 25pt;
-  margin-left: 3px;
+.nav-bar {
+    border-radius: 5px;
+    margin-top: 225px;
+    font-size: 25pt;
+    margin-left: 3px;
 }
 
-#nav-list .social-list{
-  float: right;
-  margin-right: 3px;
-  margin-top: 50px;
-  border-radius: 7px;
+#nav-list .social-list {
+    float: right;
+    margin-right: 3px;
+    margin-top: 50px;
+    border-radius: 7px;
 }
 
-#div-form{
-  border-radius: 8px;
-  background: rgb(204,204,204);
-  background: rgba(12, 12, 12, 0.5);
-  color: antiquewhite;
-  padding: 20px;
-  font-size: 25px;
-  text-align: center;
-  margin-top: 150px;
-  margin-left: 400px;
-  margin-right: 400px
+#div-form {
+    border-radius: 8px;
+    background: rgb(204, 204, 204);
+    background: rgba(12, 12, 12, 0.5);
+    color: antiquewhite;
+    padding: 20px;
+    font-size: 25px;
+    text-align: center;
+    margin-top: 150px;
+    margin-left: 400px;
+    margin-right: 400px;
 }
 
-.class-takeout{
-  padding: 3px;
-  margin-top: 5px;
-  font-size: 15px;
+.class-takeout {
+    padding: 3px;
+    margin-top: 5px;
+    font-size: 15px;
 }
 
-.submitID{
-  border-radius: 15px;
-  padding: 10px;
+.submitID {
+    border-radius: 15px;
+    padding: 10px;
 }
 
-#ratingID{
-  margin-left: 250px;
+#ratingID {
+    margin-left: 250px;
 }
 
-button:hover{
-  background-color: rgba(12, 12, 12);
-  color: antiquewhite;
+button:hover {
+    background-color: rgba(12, 12, 12);
+    color: antiquewhite;
 }
 
 input[type=submit]:hover {
-  background-color: #45a049;
+    background-color: #45a049;
 }
 
 /* Footer resource taken from https://www.freecodecamp.org/news/how-to-keep-your-footer-where-it-belongs-59c6aa05c59c/ */
 /* Footer */
 #page-container {
-  position: relative;
-  min-height: 100vh;
+    position: relative;
+    min-height: 100vh;
 }
 
 #content-wrap {
-  padding-bottom: 2.0rem;    /* Footer height */
+    padding-bottom: 2.0rem; /* Footer height */
 }
 
 #footer {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  height: 2.05rem;            /* Footer height */
-  text-align: center;
-  background-color: #333;
-  color:white;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 2.05rem; /* Footer height */
+    text-align: center;
+    background-color: #333;
+    color: white;
 }
 
 /* About Page */
 .aboutTable {
-  margin-left: 250px;
-  margin-top: 50px;
-  border-collapse: separate;
-  border-spacing: 0 1em;
-  color: antiquewhite;
-  width: 70%;
+    margin-left: 250px;
+    margin-top: 50px;
+    border-collapse: separate;
+    border-spacing: 0 1em;
+    color: antiquewhite;
+    width: 70%;
 }
 
 .teamMember {
-  width:fit-content ;   
-  background: rgb(204,204,204);
-  background: rgba(12, 12, 12, 0.2);
-  border-radius: 15px;
-  padding-left: 20px;
-  padding-right: 10px;
-  font-size:50px;
-  text-align: center;
-  vertical-align: middle;
+    width: fit-content;
+    background: rgb(204, 204, 204);
+    background: rgba(12, 12, 12, 0.2);
+    border-radius: 15px;
+    padding-left: 20px;
+    padding-right: 10px;
+    font-size: 50px;
+    text-align: center;
+    vertical-align: middle;
 }
 
 .photo {
-  height: 150px;
-  border-radius: 25px;
+    height: 150px;
+    border-radius: 25px;
 }
 
-.paraCell{
-width: auto ;  
-background: rgb(204,204,204);
-background: rgba(12, 12, 12, 0.4);
-border-radius: 15px;
-padding: 15px;
-font-family: Georgia, 'Times New Roman', Times, serif;
-font-size: 20px;
-text-align:justify;
-display: inline-block;
-vertical-align: middle;
+.paraCell {
+    width: auto;
+    background: rgb(204, 204, 204);
+    background: rgba(12, 12, 12, 0.4);
+    border-radius: 15px;
+    padding: 15px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
+    text-align: justify;
+    display: inline-block;
+    vertical-align: middle;
 }
 
-.icon{
-  width: 1.5em;
-  margin-left: 0.2em;
-  margin-bottom: 0.4em;
-  cursor: pointer;
+.icon {
+    width: 1.5em;
+    margin-left: 0.2em;
+    margin-bottom: 0.4em;
+    cursor: pointer;
 }
 
 /* Takeout Results page */
-#resultHeader{
-  font-size: 40px;
-  text-decoration: underline;
+#resultHeader {
+    font-size: 40px;
+    text-decoration: underline;
 }
 
 #takeout-table {
-  margin-left: 250px;
-  margin-top: 50px;
-  table-layout: auto;
-  border-collapse: collapse;
-  border-radius: 15px;
-  border-spacing: 0 1em;
-  background: rgb(204,204,204);
-  background: rgba(12, 12, 12, 0.3);
+    margin-left: 250px;
+    margin-top: 50px;
+    table-layout: auto;
+    border-collapse: collapse;
+    border-radius: 15px;
+    border-spacing: 0 1em;
+    background: rgb(204, 204, 204);
+    background: rgba(12, 12, 12, 0.3);
 }
 
-#takeout-table tr:nth-child(even){
-  background: rgb(204,204,204);
-  background: rgba(12, 12, 12, 0.3);
+#takeout-table tr:nth-child(even) {
+    background: rgb(204, 204, 204);
+    background: rgba(12, 12, 12, 0.3);
 }
 
 #takeout-table, td, th {
-  font-family: Georgia, 'Times New Roman', Times, serif;
-  color: antiquewhite;
-  text-align: center;
-  font-size: 22px;
-  width: auto;
-  padding: 8px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: antiquewhite;
+    text-align: center;
+    font-size: 22px;
+    width: auto;
+    padding: 8px;
 }
 
 #takeout-table, th {
-  font-size: 27px;
-  padding: 20px;
-}
-#res-name{
-  margin-right: 60px;
-
-}
-#wait{
-  margin-left: 5px;
+    font-size: 27px;
+    padding: 20px;
 }
 
-span{
-  margin-right: 2px;
-}
-#rating{
-  margin-right: 45px;
-}
-#takeout-table ,th{
-  border: 1px solid gold;
-  
-}
-th{
-  cursor: pointer;
-
+#res-name {
+    margin-right: 60px;
 }
 
-.sorting :hover{
-  background-color: rgba(204,204,204);
-  background: rgba(12, 12, 12, 0.2);
+#wait {
+    margin-left: 5px;
 }
 
+span {
+    margin-right: 2px;
+}
+
+#rating {
+    margin-right: 45px;
+}
+
+#takeout-table, th {
+    border: 1px solid gold;
+}
+
+th {
+    cursor: pointer;
+}
+
+.sorting :hover {
+    background-color: rgba(204, 204, 204);
+    background: rgba(12, 12, 12, 0.2);
+}

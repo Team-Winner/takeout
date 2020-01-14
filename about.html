@@ -1,75 +1,110 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" type="text/css" href="css/reset.css">
-    <link rel="stylesheet" type="text/css" href="css/style.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Takeout Journal - About Us</title>
-  </head>
-  <body>
-    <div id="page-container">
-      <div id="content-wrap">
-        <header>
-          <div id="nav-list">
-            <p><img src="./image/logo (2).png" class="logo"></p>
-            <ul class="link-list">
-              <li><a href ="index.html" id="link-color" class="nav-bar">Home</a></li>
-              <li><a href ="results.html" id="link-color" class="nav-bar">Results</a></li>
-              <li><a href ="about.html" id="link-color" class="nav-bar">About Us</a></li>
-            </ul>
-          </div>
-        </header>
-        <!-- Table used to set spacing and placement -->
-        <table class="aboutTable">
-          <!-- Team member 1 -->
-          <tr>
-            <td><img class="photo" src="image/zeyob.jpg" alt="photo1"> </td>
-            <td class ="teamMember">Eyob Tamir</td>
-          </tr>
-          <tr>
-            <td>
-              <a href="https://github.com/Eyob1984"> <img class="icon" src="image/github.png" alt="github"> </a> 
-              <a href="https://www.linkedin.com/in/sample-link-ab1b4015a/"> <img class="icon" src="image/linkedin.png" alt="linkedin"> </a>
-            </td>
-            <td class="paraCell">
-              Eyob Tamir is currently a full-stack javascript student at code fellows, owner Bolt trucking business in Seattle. He is originally from Ethiopia, his favorites hobbies are watching, playing soccer &#x26BD;and go out to a local attractive place with a family and friends.
-            </td>
-          </tr>
-          <!-- Team member 2 -->
-          <tr>
-            <td><img class="photo" src="image/zmatthew.png" alt="photo2"></td>
-            <td class ="teamMember">Matthew Johnson</td>
-          </tr>
-          <tr>
-            <td>
-              <a href="https://github.com/SEAsouthern"> <img class="icon" src="image/github.png" alt="github"> </a>
-              <a href="https://www.linkedin.com/in/sample-link-ab1b4015a/"> <img class="icon" src="image/linkedin.png" alt="linkedin"> </a>
-            </td>
-            <td class="paraCell">
-              Matthew Johnson is a full stack developer currently training at Code Fellows. He has lived around the county and world and worked in a variety of fields including sales, security, communications, and psychological operations. He has been living in the Seattle area since 2007 and in his off time attempts to corral two small humans and is involved with urban policy advocacy (especially zoning and public transit), LGBTQ outreach and arguing with people that are wrong on the internet. He is a soccer fan (Sounders and USMNT/USWNT) as well as of the Auburn Tigers. WAR EAGLE! 
-            </td>
-          </tr>
-          <!-- Team member 3 -->
-          <tr>
-            <td><img class="photo" src="image/zpatrick.jpg" alt="photo3"></td>
-            <td class ="teamMember">Patrick Lathrop</td>
-          </tr>
-          <tr>
-            <td>
-              <a href="https://github.com/patricklathrop"> <img class="icon" src="image/github.png" alt="github"> </a>
-              <a href="https://www.linkedin.com/in/sample-link-ab1b4015a/"> <img class="icon" src="image/linkedin.png" alt="linkedin"> </a>
-            </td>
-            <td class="paraCell">
-              Patrick has lived and traveled around the world and chose to call the most beautiful place in the world home, the Pacific Northwest &#127782;.  He enjoys hiking Washington's many trails, trying his luck &#9752; at gold panning &#9874;, and cheering on the Seahawks and Sounders with family and friends. 
-            </td>
-          </tr>
-        </table>
-      </div>
-      <footer id="footer">
-        @ team winner project 201 
-      </footer>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="css/reset.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Takeout Journal - About Us</title>
+</head>
+
+<body>
+  <div id="page-container">
+    <div id="content-wrap">
+      <header>
+        <div id="nav-list">
+          <!--
+              CODE REVIEW
+              I'm seeing inconsistent use of virtual paths for your images
+              "./image/" here, "image/" later in the file, and even other uses
+              in other files. Keep this consistent.  That way, when and if you
+              move things around, you're making the same style of change and
+              not hunting around for alternatives.
+            -->
+          <p><img src="./image/logo (2).png" class="logo"></p>
+          <ul class="link-list">
+            <!--
+              CODE REVIEW
+              Unnecessary use of the nav-bar class here. You can target these <a> tags
+              by virtue of them being children of the ul with the link-list class
+              that will make your CSS easier to manage
+            -->
+            <li><a href="index.html" id="link-color" class="nav-bar">Home</a></li>
+            <li><a href="results.html" id="link-color" class="nav-bar">Results</a></li>
+            <li><a href="about.html" id="link-color" class="nav-bar">About Us</a></li>
+          </ul>
+        </div>
+      </header>
+      <!-- Table used to set spacing and placement -->
+
+      <!--
+        CODE REVIEW
+        Tables should be used for tabular data, not layouts
+        Get good with Floats (and later Flex) to achieve the looks you want
+      -->
+      <table class="aboutTable">
+        <!-- Team member 1 -->
+        <tr>
+          <td><img class="photo" src="image/zeyob.jpg" alt="photo1"> </td>
+          <td class="teamMember">Eyob Tamir</td>
+        </tr>
+        <tr>
+          <td>
+            <a href="https://github.com/Eyob1984"> <img class="icon" src="image/github.png" alt="github"> </a>
+            <a href="https://www.linkedin.com/in/sample-link-ab1b4015a/"> <img class="icon" src="image/linkedin.png"
+                alt="linkedin"> </a>
+          </td>
+          <td class="paraCell">
+            Eyob Tamir is currently a full-stack javascript student at code fellows, owner Bolt trucking business in
+            Seattle. He is originally from Ethiopia, his favorites hobbies are watching, playing soccer &#x26BD;and go
+            out to a local attractive place with a family and friends.
+          </td>
+        </tr>
+        <!-- Team member 2 -->
+        <tr>
+          <td><img class="photo" src="image/zmatthew.png" alt="photo2"></td>
+          <td class="teamMember">Matthew Johnson</td>
+        </tr>
+        <tr>
+          <td>
+            <a href="https://github.com/SEAsouthern"> <img class="icon" src="image/github.png" alt="github"> </a>
+            <a href="https://www.linkedin.com/in/sample-link-ab1b4015a/"> <img class="icon" src="image/linkedin.png"
+                alt="linkedin"> </a>
+          </td>
+          <td class="paraCell">
+            Matthew Johnson is a full stack developer currently training at Code Fellows. He has lived around the county
+            and world and worked in a variety of fields including sales, security, communications, and psychological
+            operations. He has been living in the Seattle area since 2007 and in his off time attempts to corral two
+            small humans and is involved with urban policy advocacy (especially zoning and public transit), LGBTQ
+            outreach and arguing with people that are wrong on the internet. He is a soccer fan (Sounders and
+            USMNT/USWNT) as well as of the Auburn Tigers. WAR EAGLE!
+          </td>
+        </tr>
+        <!-- Team member 3 -->
+        <tr>
+          <td><img class="photo" src="image/zpatrick.jpg" alt="photo3"></td>
+          <td class="teamMember">Patrick Lathrop</td>
+        </tr>
+        <tr>
+          <td>
+            <a href="https://github.com/patricklathrop"> <img class="icon" src="image/github.png" alt="github"> </a>
+            <a href="https://www.linkedin.com/in/sample-link-ab1b4015a/"> <img class="icon" src="image/linkedin.png"
+                alt="linkedin"> </a>
+          </td>
+          <td class="paraCell">
+            Patrick has lived and traveled around the world and chose to call the most beautiful place in the world
+            home, the Pacific Northwest &#127782;. He enjoys hiking Washington's many trails, trying his luck &#9752; at
+            gold panning &#9874;, and cheering on the Seahawks and Sounders with family and friends.
+          </td>
+        </tr>
+      </table>
     </div>
-  </body>
+    <footer id="footer">
+      @ team winner project 201
+    </footer>
+  </div>
+</body>
+
 </html>
